@@ -1,0 +1,194 @@
+
+<!Doctype>
+<html>
+<head>
+<title>Brina's Code</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
+
+<base href="/">
+</head>
+
+<style>
+
+@keyframes backColorChange {
+
+	0% {background-image:url('images/jesus.png');background-size:100%;}
+	100% {background-image:url('images/stars.jpg');background-size:100%;}
+	
+	
+}
+
+.backColorChange {
+
+	animation-name:backColorChange;
+	animation-duration:10s;
+	animation-iteration-count: 2 2s;
+}
+
+@font-face {
+	font-family: bernado;
+	src : url("fonts/bernadomodabold.ttf");
+}
+
+body {
+
+	background-color:white;
+	overflow-x:hidden;
+
+}
+
+
+.sl-container{
+	display: block;
+	width:100%;
+	padding:100px 0px 20px 0px ;
+	margin-top:30%;
+	background-color: white;
+}
+
+.sl-slope {
+	margin-left: -30px;
+	margin-right: -50px;
+	border:;
+}
+
+.sl-slope:nth-child(odd){
+	background-color: white;
+	transform:rotate(-5deg);
+	margin-top:-10%;
+}
+
+.sl-slope:nth-child(even){
+	background:linear-gradient(to right,purple,#e90089,#e90089,#e90089,purple);
+	transform:rotate(5deg);
+	margin-top:-10%;
+}
+
+.sl-content {
+	padding:5% 10% ;
+	color:black;
+}
+
+.sl-slope:nth-child(odd) .sl-content{
+	transform:rotate(5deg);
+	height:70%;
+}
+.sl-slope:nth-child(even) .sl-content{
+	transform:rotate(-5deg);
+	height:70%;
+}
+
+
+
+
+
+</style>
+
+<body id="body" class="row backColorChange">
+
+
+
+	<div id="div1" class="col-md-12" style="background-color:rgba(255,255,255,0);background-position:bottom;background-repeat:no-repeat;border:;margin-right:-50px;height:%;padding:5% 40% 0% ">
+		
+		<div class="" >
+			
+			<span style="color:black;font-family:bernado;text-align:right;position:absolute;">
+				<span style="font-size:4.5vw";>Brina's Code</span>
+				<span style="font-family:bernado;"><strong>by Sabrina Koumoin</strong></span>
+			</span>
+		</div>
+
+
+	
+	</div>
+
+	<div class="col-md-12">
+		<div class=" sl-container" style="background-color: rgba(255,255,255,0)">
+				<img src="images/afroHead.png" width="35%" style="position:relative;margin-top:-35.5%;transform:rotate(5deg)" />
+
+
+					<section class="sl-slope">
+						<article class="sl-content">
+							<h1 style=""> Hello world 
+								<span class="glyphicon glyphicon-heart"></span> 
+							</h1>
+							<p>
+								Welcome to my porfolio, check out my work 
+								
+							</p>
+
+							<button class='btn' style="margin-top:3px">
+								Web designs
+							</button>
+							<button class="btn" style="margin-top:3px">
+								Web apps / websites /games
+							</button>
+							<button class="btn" style="margin-top:3px">
+								Medium Blog 
+							</button>
+							<button class="btn" style="margin-top:3px">
+								AI and Robotics (coming soon) 
+							</button>
+							</br>
+							<span class="glyphicon glyphicon-arrow"></span>
+
+						</article>
+
+
+					</section>
+
+					<section class="sl-slope">
+						<article class="sl-content">
+						
+							
+
+							<div ng-view ></div>
+							
+
+						</article>
+					</section>
+
+					<section class="sl-slope">
+						<article class="sl-content">
+							<h1 style=""> Follow me on social media </h1>
+							<p>Github</p>
+
+							
+							
+
+						</article>
+					</section>
+
+		</div>
+
+		
+
+	</div>
+
+
+
+
+	
+
+
+</body>
+
+<script>
+	var div1 = document.getElementById("div1")
+	
+	/*
+		div1.style.height = (505/1280)*window.innerWidth 
+		div2.style.height = (600/1280)*window.innerWidth ss
+		alert("done")
+
+	
+	
+	window.addEventListener("resize",resize())
+	//how to indicate the refresh event?
+		
+	</script>
+
+
+
+</html>
