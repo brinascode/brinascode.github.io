@@ -1,10 +1,15 @@
-
 <!Doctype>
 <html>
 <head>
 <title>Brina's Code</title>
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
+
+<script  src="javascripts/angular.min.js"></script>
+<script src="javascripts/angular-route.min.js"></script>
+<script  src="javascripts/modules/mymgisModule.js"></script>
+<script  src="javascripts/controllers/welcome.js"></script>
+<script  src="javascripts/controllers/HomeController.js"></script>
 
 <base href="/">
 </head>
@@ -13,7 +18,7 @@
 
 @keyframes backColorChange {
 
-	0% {background-image:url('images/jesus.png');background-size:100%;}
+	0% {background-image:url('images/sunset.jpg');background-size:100%;}
 	100% {background-image:url('images/stars.jpg');background-size:100%;}
 	
 	
@@ -85,7 +90,7 @@ body {
 
 </style>
 
-<body id="body" class="row backColorChange">
+<body id="body" ng-app="mymgis" class="row backColorChange" ng-controller="HomeController">
 
 
 
@@ -161,9 +166,6 @@ body {
 					</section>
 
 		</div>
-
-		
-
 	</div>
 
 
@@ -179,7 +181,7 @@ body {
 	
 	/*
 		div1.style.height = (505/1280)*window.innerWidth 
-		div2.style.height = (600/1280)*window.innerWidth ss
+		div2.style.height = (600/1280)*window.innerWidth 
 		alert("done")
 
 	
