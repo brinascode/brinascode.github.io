@@ -1,190 +1,310 @@
 <!Doctype>
 <html>
-<head>
-<title>Brina's Code</title>
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
- <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
+	<head>
+	<title>Brina's Code</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
+	 <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
 
-<base href="/">
-</head>
+	<script  src="javascripts/angular.min.js"></script>
+	<script src="javascripts/angular-route.min.js"></script>
+	<script  src="javascripts/modules/mymgisModule.js"></script>
+	<script  src="javascripts/controllers/welcome.js"></script>
+	<script  src="javascripts/controllers/HomeController.js"></script>
 
-<style>
+	<base href="/">
+	</head>
 
-@keyframes backColorChange {
+	<style>
 
-	0% {background-image:url('images/sunset.jpg');background-size:100%;}
-	100% {background-image:url('images/stars.jpg');background-size:100%;}
-	
-	
-}
+	@keyframes backColorChange {
 
-.backColorChange {
-
-	animation-name:backColorChange;
-	animation-duration:10s;
-	animation-iteration-count: 2 2s;
-}
-
-@font-face {
-	font-family: bernado;
-	src : url("fonts/bernadomodabold.ttf");
-}
-
-body {
-
-	background-color:white;
-	overflow-x:hidden;
-
-}
-
-
-.sl-container{
-	display: block;
-	width:100%;
-	padding:100px 0px 20px 0px ;
-	margin-top:30%;
-	background-color: white;
-}
-
-.sl-slope {
-	margin-left: -30px;
-	margin-right: -50px;
-	border:;
-}
-
-.sl-slope:nth-child(odd){
-	background-color: white;
-	transform:rotate(-5deg);
-	margin-top:-10%;
-}
-
-.sl-slope:nth-child(even){
-	background:linear-gradient(to right,purple,#e90089,#e90089,#e90089,purple);
-	transform:rotate(5deg);
-	margin-top:-10%;
-}
-
-.sl-content {
-	padding:5% 10% ;
-	color:black;
-}
-
-.sl-slope:nth-child(odd) .sl-content{
-	transform:rotate(5deg);
-	height:70%;
-}
-.sl-slope:nth-child(even) .sl-content{
-	transform:rotate(-5deg);
-	height:70%;
-}
-
-
-
-
-
-</style>
-
-<body id="body" ng-app="mymgis" class="row backColorChange" ng-controller="HomeController">
-
-
-
-	<div id="div1" class="col-md-12" style="background-color:rgba(255,255,255,0);background-position:bottom;background-repeat:no-repeat;border:;margin-right:-50px;height:%;padding:5% 40% 0% ">
+		0% {background-image:url('images/sunset.jpg');background-size:100%;}
+		100% {background-image:url('images/stars.jpg');background-size:100%;}
 		
-		<div class="" >
+		
+	}
+
+	.backColorChange {
+
+		animation-name:backColorChange;
+		animation-duration:10s;
+		animation-iteration-count: 2 2s;
+	}
+
+	@font-face {
+		font-family: bernado;
+		src : url("fonts/bernadomodabold.ttf");
+	}
+
+	body {
+
+		background-color:white;
+		overflow-x:hidden;
+
+	}
+
+
+	.sl-container{
+		display: block;
+		width:100%;
+		padding:100px 0px 20px 0px ;
+		margin-top:30%;
+		background-color: white;
+	}
+
+	.sl-slope {
+		margin-left: -30px;
+		margin-right: -50px;
+		border:;
+	}
+
+	.sl-slope:nth-child(odd){
+		background-color: white;
+		transform:rotate(-5deg);
+		margin-top:-10%;
+	}
+
+	.sl-slope:nth-child(even){
+		background:linear-gradient(to right,purple,#e90089,#e90089,#e90089,purple);
+		transform:rotate(5deg);
+		margin-top:-10%;
+	}
+
+	.sl-content {
+		padding:5% 10% ;
+		color:black;
+	}
+
+	.sl-slope:nth-child(odd) .sl-content{
+		transform:rotate(5deg);
+		height:70%;
+	}
+	.sl-slope:nth-child(even) .sl-content{
+		transform:rotate(-5deg);
+		height:70%;
+	}
+
+
+
+
+
+	</style>
+
+	<body id="body" ng-app="mymgis" class="row backColorChange" ng-controller="HomeController">
+
+
+
+		<div id="div1" class="col-md-12" style="background-color:rgba(255,255,255,0);background-position:bottom;background-repeat:no-repeat;border:;margin-right:-50px;height:%;padding:5% 40% 0% ">
 			
-			<span style="color:black;font-family:bernado;text-align:right;position:absolute;">
-				<span style="font-size:4.5vw";>Brina's Code</span>
-				<span style="font-family:bernado;"><strong>by Sabrina Koumoin</strong></span>
-			</span>
-		</div>
+			<div class="" >
+				
+				<span style="color:black;font-family:bernado;text-align:right;position:absolute;">
+					<span style="font-size:4.5vw";>Brina's Code</span>
+					<span style="font-family:bernado;"><strong>by Sabrina Koumoin</strong></span>
+				</span>
+			</div>
 
 
-	
-	</div>
-
-	<div class="col-md-12">
-		<div class=" sl-container" style="background-color: rgba(255,255,255,0)">
-				<img src="images/myafro.png" width="35%"
-				 style="position:relative;margin-top:-35.5%;transform:rotate(5deg)" />
-
-
-					<section class="sl-slope">
-						<article class="sl-content">
-							<h1 style=""> Hello world 
-								<span class="glyphicon glyphicon-heart"></span> 
-							</h1>
-							<p>
-								Welcome to my porfolio, check out my work 
-								
-							</p>
-
-							<button class='btn' style="margin-top:3px">
-								Web designs
-							</button>
-							<button class="btn" style="margin-top:3px">
-								Web apps / websites /games
-							</button>
-							<button class="btn" style="margin-top:3px">
-								Medium Blog 
-							</button>
-							<button class="btn" style="margin-top:3px">
-								AI and Robotics (coming soon) 
-							</button>
-							</br>
-							<span class="glyphicon glyphicon-arrow"></span>
-
-						</article>
-
-
-					</section>
-
-					<section class="sl-slope">
-						<article class="sl-content">
-						
-							
-
-							<div ng-view ></div>
-							
-
-						</article>
-					</section>
-
-					<section class="sl-slope">
-						<article class="sl-content">
-							<h1 style=""> Follow me on social media </h1>
-							<p>Github</p>
-
-							
-							
-
-						</article>
-					</section>
-
-		</div>
-	</div>
-
-
-
-
-	
-
-
-</body>
-
-<script>
-	var div1 = document.getElementById("div1")
-	
-	/*
-		div1.style.height = (505/1280)*window.innerWidth 
-		div2.style.height = (600/1280)*window.innerWidth 
-		alert("done")
-
-	
-	
-	window.addEventListener("resize",resize())
-	//how to indicate the refresh event?
 		
+		</div>
+
+		<div class="col-md-12">
+			
+			<div class="sl-container" id="sl-container" 
+			style="background-color: rgba(255,255,255,0)">
+					
+					<img src="images/myafro.png" width="35%" style="position:relative;margin-top:-35.5%;transform:rotate(5deg)" id="back-top"/>
+
+
+						<section class="sl-slope">
+							<article class="sl-content">
+								<h1 style="" > Hello world 
+									<span class="glyphicon glyphicon-heart"></span> 
+								</h1>
+								<p>
+									Welcome to my porfolio! <br>
+									My name is Sabrina Koumoin, I am an 18 year old student, who will be studying Computer Science at Marymount University. I love coding, designing, and everything tech-related. <br>
+
+									Check out my work:<br>
+									
+								</p>
+
+								<a href="#view">
+									<button id="design" class='btn' style="margin-top:3px">
+										Web designs
+									</button>
+								</a>
+								<a href="#view">
+									<button id ="apps" class="btn" style="margin-top:3px">
+										Web apps / websites /games
+									</button>
+								</a>
+	
+								<a href="#view">
+									<button id="blog" class="btn" style="margin-top:3px">
+										Blog, AI and Robotics (coming soon) 
+									</button>
+								</a>
+								</br>
+								<span class="glyphicon glyphicon-arrow"></span>
+
+							</article>
+
+
+						</section>
+
+						
+
+						<section class="sl-slope">
+							<article class="sl-content">
+								<h1 style=""> 
+									 Follow me on social media !
+								</h1>
+								
+								<a href="https://github.com/brinascode">
+									<img src="images/github-icon.png" alt="icon" width="3%" />Github
+								</a>
+
+								<br>
+								<a>
+									<img src="images/twitter-icon.png" alt="icon" width="3%" />
+									@brinascode
+								</a>
+
+								
+								
+
+							</article>
+						</section>
+
+						<section class="sl-slope">
+							<article class="sl-content row" id="view">
+							<a href="#back-top">Back to the top</a>
+								
+								
+
+							</article>
+						</section>
+
+			</div>
+		</div>
+
+
+
+
+		
+
+
+	</body>
+
+	<script>
+
+	//Getting our elements
+
+	var view = document.getElementById("view")
+	var designButton = document.getElementById("design")
+	var appsButton = document.getElementById("apps")
+
+//Storing apps' data
+	var apps = [{
+		name:"Hangman",
+		description:"A fun hangman game",
+		img :"images/hangman.jpg",
+		href :"hangman"
+	},{
+		name:"My Journal",
+		description:"A journal app that works offline in your browser",
+		img :"images/myJournal.jpg",
+		href :""
+
+	},{
+		name:"Dressup!",
+		description:"The dolls and their outfits are my creations",
+		img :"images/dressup.jpg",
+		href :"dressupGame"
+	}
+	]
+	
+
+
+//For Apps View
+var appsBtn = false
+var view = document.getElementById("view")
+var appsBtnFunction  = function(){
+			
+			//For the click toggle. When you click on same button, or when you click on other button
+			appsBtn = !appsBtn
+			
+			if(appsBtn){
+
+					
+
+					var heading  = document.createElement("h2")
+					heading.innerText = "Web apps - Click on app's name to open"
+					view.appendChild(heading)
+
+			
+				for(var i=0; i<=apps.length-1; i++){
+
+					//Making a new slope!
+
+					var appsDiv = document.createElement("div")
+					var link    = document.createElement("a")
+					var title   = document.createElement("h3")
+					var img     = document.createElement("img")
+					var description = document.createElement("p")
+
+					link.href               = apps[i].href
+					link.style.color        = "black" 
+					appsDiv.className		 = "col-md-4"
+					title.innerText			 = apps[i].name
+					img.src                  = apps[i].img
+					img.alt                  = "unavailable"
+		 			img.style.width          = 60+"%"
+		 			description.innerText    = apps[i].description
+		 			
+		 			//Appending everything in div, then div to article
+
+					appsDiv.appendChild(title)
+					appsDiv.appendChild(img)
+					appsDiv.appendChild(description)
+					link.appendChild(appsDiv)
+					view.appendChild(link)
+
+
+
+				}
+
+			}
+
+			else if(appsBtn !== true) //We remove what we just added (the divs)
+			{
+				
+				/* Where we make the stuff dissapear
+				var addedDivs = document.querySelectorAll("#view div")
+				var addedHeadings = document.querySelectorAll("#view h2")
+				for(var i=0;i<=addedDivs.length-1;i++){
+					view.removeChild(addedDivs[i])
+					view.removeChild(addedHeadings[i])
+				}
+				*/
+				//Instead of making it dissapear, let's just do nothing, simple :) 
+
+
+				return "hi"
+
+				
+			}
+			
+}
+
+	
+appsButton.addEventListener("click",appsBtnFunction,false)
+		
+			
+
 	</script>
+	
 
 
 
