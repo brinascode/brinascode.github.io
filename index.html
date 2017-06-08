@@ -5,11 +5,6 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
 	 <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
 
-	<script  src="javascripts/angular.min.js"></script>
-	<script src="javascripts/angular-route.min.js"></script>
-	<script  src="javascripts/modules/mymgisModule.js"></script>
-	<script  src="javascripts/controllers/welcome.js"></script>
-	<script  src="javascripts/controllers/HomeController.js"></script>
 
 	<base href="/">
 	</head>
@@ -84,7 +79,10 @@
 		height:70%;
 	}
 
+	a {
 
+		color:black;
+	}
 
 
 
@@ -125,10 +123,36 @@
 									Welcome to my porfolio! <br>
 									My name is Sabrina Koumoin, I am an 18 year old student, who will be studying Computer Science at Marymount University. I love coding, designing, and everything tech-related. <br>
 
-									Check out my work:<br>
+									
 									
 								</p>
 
+								<h3 style=""> 
+									 You can follow me on social media:
+								</h3>
+								
+								<a href="https://github.com/brinascode">
+									<img src="images/github-icon.png" alt="icon" width="3%" />Github
+								</a>
+
+								<br>
+								<a>
+									<img src="images/twitter-icon.png" alt="icon" width="3%" />
+									@brinascode
+								</a>
+
+
+							</article>
+
+
+						</section>
+
+						
+
+						<section class="sl-slope">
+							<article class="sl-content">
+								
+								<h1>Check out my work:</h1><br>
 								<a href="#view">
 									<button id="design" class='btn' style="margin-top:3px">
 										Web designs
@@ -147,31 +171,6 @@
 								</a>
 								</br>
 								<span class="glyphicon glyphicon-arrow"></span>
-
-							</article>
-
-
-						</section>
-
-						
-
-						<section class="sl-slope">
-							<article class="sl-content">
-								<h1 style=""> 
-									 Follow me on social media !
-								</h1>
-								
-								<a href="https://github.com/brinascode">
-									<img src="images/github-icon.png" alt="icon" width="3%" />Github
-								</a>
-
-								<br>
-								<a>
-									<img src="images/twitter-icon.png" alt="icon" width="3%" />
-									@brinascode
-								</a>
-
-								
 								
 
 							</article>
@@ -240,7 +239,7 @@ var appsBtnFunction  = function(){
 					
 
 					var heading  = document.createElement("h2")
-					heading.innerText = "Web apps - Click on app's name to open"
+					heading.innerText = "Web apps - Click app to open"
 					view.appendChild(heading)
 
 			
