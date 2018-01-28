@@ -1,0 +1,79 @@
+@keyframes backColorChange {
+
+    0% {background-image:url('images/sunset.jpg');background-size:100%;}
+    100% {background-image:url('images/stars.jpg');background-size:100%;}
+    
+    
+  }
+
+  .backColorChange {
+
+    animation-name:backColorChange;
+    animation-duration:10s;
+    animation-iteration-count: 2 2s;
+  }
+
+  @font-face {
+    font-family: bernado;
+    src : url("fonts/bernadomodabold.ttf");
+  }
+
+@font-face {
+    font-family: dalamis;
+    src : url("fonts/dalamis.otf");
+  }
+
+  body {
+
+    background-color:white;
+    overflow-x:hidden;
+
+  }
+
+
+  .sl-container{
+    display: block;
+    width:100%;
+    padding:100px 0px 20px 0px ;
+    margin-top:30%;
+    background-color: white;
+  }
+
+  .sl-slope {
+    margin-left: -30px;
+    margin-right: -50px;
+    border:;
+  }
+
+  .sl-slope:nth-child(odd){
+    background-color: white;
+    transform:rotate(-5deg);
+    margin-top:-10%;
+  }
+
+  .sl-slope:nth-child(even){
+    background-color:pink;
+    transform:rotate(5deg);
+    margin-top:-10%;
+  }
+
+/*background:linear-gradient(to right,purple,#e90089,#e90089,#e90089,purple); */
+
+  .sl-content {
+    padding:5% 10% ;
+    color:black;
+  }
+
+  .sl-slope:nth-child(odd) .sl-content{
+    transform:rotate(5deg);
+    height:70%;
+  }
+  .sl-slope:nth-child(even) .sl-content{
+    transform:rotate(-5deg);
+    height:70%;
+  }
+
+  a {
+
+    color:black;
+  }
