@@ -46,9 +46,9 @@ var apps = [{
         href :"https://afribelle-promo.herokuapp.com/",
         type:"designs"
     },{
-        name:"Portfolio Space",
+        name:"Portfolio Space Theme",
         description:"Alternative theme to this very website",
-        img :"images/portfoliospacetheme.PNG",
+        img :"images/portfoliospacetheme.png",
         href :"https://brinascode.herokuapp.com/",
         type:"designs"
     },{
