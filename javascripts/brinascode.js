@@ -114,7 +114,7 @@ var createView = function(type){
                         appsDiv.className        = "col-md-3"
                         title.innerText          = appsToLoad[i].name
                         img.src                  = appsToLoad[i].img
-                        img.alt                  = "unavailable"
+                        img.alt                  = "Picture loading"
                         img.style.width          = 100+"%"
                         description.innerText    = appsToLoad[i].description
                         
