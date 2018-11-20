@@ -19,32 +19,8 @@ var apps = [{
         img :"images/afribellepic2.PNG",
         href :"https://afribelle.herokuapp.com/",
         type:"apps"
-    },{
-        name:"Landing Page",
-        description:"Landing page to Afribelle (originally in French but Google Translate is available)",
-        img :"images/afribellepic.PNG",
-        href :"https://afribelle-promo.herokuapp.com/",
-        type:"designs"
-    },{
-        name:"Hangman",
-        description:"A fun hangman game",
-        img :"images/hangman.jpg",
-        href :"hangman",
-        type:"games"
-    },{
-        name:"My Journal",
-        description:"A journal app that works offline in your browser",
-        img :"images/myjournal.jpg",
-        href :"myjournal",
-        type:"apps"
-
-    },{
-        name:"Dressup!",
-        description:"The dolls and their outfits are my creations",
-        img :"images/dressup.jpg",
-        href :"dressupGame",
-        type:"games"
-    },{
+    },
+       {
         name:"My Plan Abidjan",
         description:"City Guide app for Abidjan (originally in French but Google Translate is available)",
         img :"images/myplanabidjan.png",
@@ -56,6 +32,37 @@ var apps = [{
         img :"images/mymgis.PNG",
         href :"https://mymgis2.herokuapp.com/",
         type:"apps"
+    },{
+        name:"My Journal",
+        description:"A journal app that works offline in your browser",
+        img :"images/myjournal.jpg",
+        href :"myjournal",
+        type:"apps"
+
+    },{
+        name:"Landing Page",
+        description:"Landing page to Afribelle (originally in French but Google Translate is available)",
+        img :"images/afribellepic.PNG",
+        href :"https://afribelle-promo.herokuapp.com/",
+        type:"designs"
+    },{
+        name:"Portfolio Space Theme",
+        description:"Alternative theme to this very website",
+        img :"images/portfoliospacetheme.png",
+        href :"https://brinascode.herokuapp.com/",
+        type:"designs"
+    },{
+        name:"Hangman",
+        description:"A fun hangman game",
+        img :"images/hangman.jpg",
+        href :"hangman",
+        type:"games"
+    },{
+        name:"Dressup!",
+        description:"The dolls and their outfits are my creations",
+        img :"images/dressup.jpg",
+        href :"dressupGame",
+        type:"games"
     },
     ]
     
