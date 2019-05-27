@@ -1,8 +1,8 @@
 #leftBrain {
-  background: linear-gradient(to left,blue,yellow)
+  background: linear-gradient(to left,#c2e59c,#64b3f4)
 }
 #rightBrain{
-  background: linear-gradient(to right,yellow,pink)
+  background: linear-gradient(to right,#0099f7,#f11712)
 }
 
 
