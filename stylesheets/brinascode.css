@@ -1,3 +1,11 @@
+#leftBrain {
+  background: linear-gradient(to left,blue,yellow)
+}
+#rightBrain{
+  background: linear-gradient(to right,yellow,pink)
+}
+
+
 @keyframes backColorChange {
 
     0% {background-image:url('images/sunset.jpg');background-size:100%;}
