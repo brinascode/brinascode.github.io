@@ -5,6 +5,7 @@
 
 //The view
 var view = document.getElementById("view")
+
 //We save the original innerText for the About section
 var viewInnerForAbout = view.innerHTML
 
