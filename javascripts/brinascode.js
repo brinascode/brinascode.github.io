@@ -77,10 +77,12 @@ var apps = [{
          
 //******FUNCTIONS NOW! ***********************************************************************
 
-var appsToLoad = []
 
-//Event helper for when button is clicked.
-var selectView = function(e){
+
+var appsToLoad = [] //where we store the apps we will be displaying
+
+
+var selectView = function(e){ //Event helper for when menu button is clicked.
         var type = e.target.id
         /* We loop through our list of all apps (elements in Array) to populate the array of the apps 
         we are going to display */
@@ -90,9 +92,7 @@ var selectView = function(e){
                     appsToLoad.push(apps[i])
                 }
         }
-        //Then we create the view for the selected type:
-        createView(type)    
-        
+        createView(type) //Then we create the view for the selected type      
 } 
 
 var createView = function(type){
@@ -109,8 +109,8 @@ var createView = function(type){
                       title.innerText = typeDetails[type].title
                       view.appendChild(title)
 
-                     //Loop to create elements to show app
-                    for (var i=0; i<=appsToLoad.length-1; i++){
+                  
+                    for (var i=0; i<=appsToLoad.length-1; i++){   //Loop to create elements to show apps
                         var appsDiv = document.createElement("div")
                         var link    = document.createElement("a")
                         var title   = document.createElement("h3")
