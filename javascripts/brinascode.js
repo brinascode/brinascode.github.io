@@ -2,7 +2,7 @@
 //**************VARIABLES and STORAGE*****************************************************
 
 //****Getting our DOM elements:
-
+var hi ="gg"
 //The view
 var view = document.getElementById("view")
 
@@ -99,6 +99,7 @@ var selectView = function(type){ //Event helper for when menu button is clicked.
 } 
 
 var createView = function(type){
+  
                 //The about page is special:
                 if(type == "about"){
                     view.innerHTML = viewInnerForAbout 
