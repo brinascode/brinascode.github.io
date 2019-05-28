@@ -149,7 +149,7 @@ var createView = function(type){
                       
                         //Appending everything in div, then div to article
                         view.appendChild(appsDivLeft)
-                        view.appendChild(appsDivRigth)
+                        view.appendChild(appsDivRight)
                         }
                 }
 
