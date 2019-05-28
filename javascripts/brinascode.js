@@ -82,7 +82,7 @@ var apps = [{
 var appsToLoad = [] //where we store the apps we will be displaying
 
 
-var selectView = function(e){ //Event helper for when menu button is clicked.
+var selectView = function(type){ //Event helper for when menu button is clicked.
    
         var type = type
        
