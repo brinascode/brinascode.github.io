@@ -104,17 +104,20 @@ var createView = function(type){
                     view.innerHTML = viewInnerForAbout 
                 }
                 else{
-                            //First we empty the view:
+                            //First we empty the view from its current content:
                     view.innerText = ""
 
-                     //Creating the  type's title and appending
+                     //Creating the Type's (mainCategory) title (Ex: Web Apps, Games etc...) and appending it at once
                       var title  = document.createElement("h2")
                       title.innerText = typeDetails[type].title
                       view.appendChild(title)
 
                   
                     for (var i=0; i<=appsToLoad.length-1; i++){   //Loop to create elements to show apps
-                        var appsDiv = document.createElement("div")
+
+                      
+                        var appsDivLeft = document.createElement("div")
+                        var appsDivRight = document.createElement("div")
                         var link    = document.createElement("a")
                         var title   = document.createElement("h3")
                         var img     = document.createElement("img")
@@ -122,7 +125,8 @@ var createView = function(type){
 
                         link.href               = appsToLoad[i].href
                         link.style.color        = "black" 
-                        appsDiv.className        = "col-md-3"
+                        appsDivLeft.className  = "col-md-6 col-lg-6 col-sm-6"
+                        appsDivRight.className  = "col-md-6 col-lg-6 col-sm-6"
                         title.innerText          = appsToLoad[i].name
                         img.src                  = appsToLoad[i].img
                         img.alt                  = "Picture loading"
@@ -130,10 +134,12 @@ var createView = function(type){
                         description.innerText    = appsToLoad[i].description
                         
                         //Appending everything in div, then div to article
-                        appsDiv.appendChild(title)
-                        appsDiv.appendChild(img)
-                        appsDiv.appendChild(description)
-                        link.appendChild(appsDiv)
+                        appsDivLeft.appendChild(img)
+                        appsDivRight.appendChild(title)
+                        appsDivLeft.appendChild(description)
+    
+                        link.appendChild(appsDivLeft)
+                        link.appendChild(appsDivRight)
                         view.appendChild(link)
                         }
                 }
