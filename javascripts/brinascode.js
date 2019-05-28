@@ -116,7 +116,9 @@ var createView = function(type){
                   
                     for (var i=0; i<=appsToLoad.length-1; i++){   //Loop to create elements to show apps
 
-                      
+                      var mainDiv = document.createElement("div")
+                      mainDiv.className = "row"
+
                         var appsDivLeft = document.createElement("div")
                             appsDivLeft.className   = "col-md-6 col-lg-6 col-sm-6"
                             var img     = document.createElement("img")
@@ -149,8 +151,10 @@ var createView = function(type){
                                 
                       
                         //Appending everything in div, then div to article
-                        view.appendChild(appsDivLeft)
-                        view.appendChild(appsDivRight)
+                        mainDiv.appendChild(appsDivLeft)
+                        mainDiv.appendChild(appsDivRight)
+                       
+                        view.appendChild(mainDiv)
                         }
                 }
 
