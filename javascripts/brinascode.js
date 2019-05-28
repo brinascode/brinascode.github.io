@@ -117,30 +117,39 @@ var createView = function(type){
 
                       
                         var appsDivLeft = document.createElement("div")
-                        var appsDivRight = document.createElement("div")
-                        var link    = document.createElement("a")
-                        var title   = document.createElement("h3")
-                        var img     = document.createElement("img")
-                        var description = document.createElement("p")
+                            appsDivLeft.className   = "col-md-6 col-lg-6 col-sm-6"
+                            var img     = document.createElement("img")
+                            img.src                  = appsToLoad[i].img
+                            img.alt                  = "Picture loading"
+                            img.style.width          = 100+"%"
+                           
+                            var linkLeft  = document.createElement("a")
+                            linkLeft.href  = appsToLoad[i].href
+                            linkLeft.style.color  = "black" 
+                            linkLeft.appendChild(img)
 
-                        link.href               = appsToLoad[i].href
-                        link.style.color        = "black" 
-                        appsDivLeft.className  = "col-md-6 col-lg-6 col-sm-6"
-                        appsDivRight.className  = "col-md-6 col-lg-6 col-sm-6"
-                        title.innerText          = appsToLoad[i].name
-                        img.src                  = appsToLoad[i].img
-                        img.alt                  = "Picture loading"
-                        img.style.width          = 100+"%"
-                        description.innerText    = appsToLoad[i].description
-                        
-                        //Appending everything in div, then div to article
-                        appsDivLeft.appendChild(img)
-                        appsDivRight.appendChild(title)
-                        appsDivLeft.appendChild(description)
+                            appsDivLeft.appendChild(linkLeft)
+
+                        var appsDivRight = document.createElement("div")
+                        appsDivRight.className   = "col-md-6 col-lg-6 col-sm-6"
+                                var title   = document.createElement("h3")
+                                title.innerText  = appsToLoad[i].name
+
+                                var linkRight  = document.createElement("a")
+                                linkRight.href  = appsToLoad[i].href
+                                linkRight.style.color  = "black" 
+                                linkRight.appendChild(title)
+                                appsDivRight.appendChild(linkRight)
     
-                        link.appendChild(appsDivLeft)
-                        link.appendChild(appsDivRight)
-                        view.appendChild(link)
+                                var description = document.createElement("p")
+                                description.innerText  = appsToLoad[i].description
+                                appsDivRight.appendChild(description)
+                                
+                                
+                      
+                        //Appending everything in div, then div to article
+                        view.appendChild(appsDivLeft)
+                        view.appendChild(appsDivRigth)
                         }
                 }
 
