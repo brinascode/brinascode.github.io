@@ -143,10 +143,11 @@ var createView = function(type){
 }
 
 
+/*
 //We add the click event to our buttons
 for(var i=0;i<buttons.length;i++){
    buttons[i].addEventListener("click",function(e){
         selectView(e)
     },false)
 }
-
+*/ 
