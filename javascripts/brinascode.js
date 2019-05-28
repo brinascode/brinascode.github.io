@@ -84,6 +84,8 @@ var appsToLoad = [] //where we store the apps we will be displaying
 
 var selectView = function(e){ //Event helper for when menu button is clicked.
         var type = e.target.id
+        alert(e.target)
+        alert(JSON.stringify(e.target))
       
         /* We loop through our list of all apps (elements in Array) to populate the array of the apps 
         we are going to display */
