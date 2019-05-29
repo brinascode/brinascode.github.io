@@ -1,4 +1,3 @@
-
 //**************VARIABLES and STORAGE*****************************************************
 
 //****Getting our DOM elements:
@@ -151,18 +150,17 @@ var createView = function(type){
                                 
                                 
                       
-                        //Appending everything in div, then div to article.
-                        mainDiv.appendChild(appsDivRight)
+                        //Appending everything in div, then div to article
                         mainDiv.appendChild(appsDivLeft)
+                        mainDiv.appendChild(appsDivRight)
                        
-                        
+                        view.appendChild(mainDiv)
                         }
-                     view.appendChild(mainDiv)
+                 
                 }
 
                 appsToLoad = []
 }
-
 
 /*
 //We add the click event to our buttons
