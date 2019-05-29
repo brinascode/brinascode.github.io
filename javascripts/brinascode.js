@@ -152,8 +152,9 @@ var createView = function(type){
                                 
                       
                         //Appending everything in div, then div to article
-                        mainDiv.appendChild(appsDivLeft)
+                        
                         mainDiv.appendChild(appsDivRight)
+                        mainDiv.appendChild(appsDivLeft)
                        
                         
                         }
