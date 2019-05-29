@@ -1,4 +1,3 @@
-
 //**************VARIABLES and STORAGE*****************************************************
 
 //****Getting our DOM elements:
@@ -113,10 +112,13 @@ var createView = function(type){
                       title.innerText = typeDetails[type].title
                       view.appendChild(title)
 
+                     //Main Div
+                      var mainDiv = document.createElement("div")
+                      mainDiv.className = "row"
+
                   
                     for (var i=0; i<=appsToLoad.length-1; i++){   //Loop to create elements to show apps
 
-                      
                         var appsDivLeft = document.createElement("div")
                             appsDivLeft.className   = "col-md-6 col-lg-6 col-sm-6"
                             var img     = document.createElement("img")
@@ -149,14 +151,15 @@ var createView = function(type){
                                 
                       
                         //Appending everything in div, then div to article
-                        view.appendChild(appsDivLeft)
-                        view.appendChild(appsDivRight)
+                        mainDiv.appendChild(appsDivLeft)
+                        mainDiv.appendChild(appsDivRight)
+                       
+                        view.appendChild(mainDiv)
                         }
                 }
 
                 appsToLoad = []
 }
-
 
 /*
 //We add the click event to our buttons
