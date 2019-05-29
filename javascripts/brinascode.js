@@ -123,9 +123,9 @@ var createView = function(type){
                         var appsDivLeft = document.createElement("div")
                             appsDivLeft.className   = "col-md-6 col-lg-6 col-sm-6"
                             var img     = document.createElement("img")
-                            img.src                  = appsToLoad[i].img
-                            img.alt                  = "Picture loading"
-                            img.style.width          = 100+"%"
+                            img.src     = appsToLoad[i].img
+                            img.alt     = "Picture loading"
+                            img.style.width = 100+"%"
                            
                             var linkLeft  = document.createElement("a")
                             linkLeft.href  = appsToLoad[i].href
@@ -155,8 +155,9 @@ var createView = function(type){
                         mainDiv.appendChild(appsDivLeft)
                         mainDiv.appendChild(appsDivRight)
                        
-                        view.appendChild(mainDiv)
+                        
                         }
+                     view.appendChild(mainDiv)
                 }
 
                 appsToLoad = []
