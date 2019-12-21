@@ -1,0 +1,6 @@
+How everything is organized:
+
+-- The first thing you see when you get on the website is the portfolio
+-- The blog only comes up if you do  brinascode.tech/blog
+
+Uses vanilla everything, hosted on Zeit. For some reason I can't do a hybrid of Gatsby and vanilla.
