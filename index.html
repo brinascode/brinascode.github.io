@@ -1,165 +1,224 @@
-<!Doctype>
+<!Doctype html>
 <html>
     <head>
         <title>Brina's Code</title>
-         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8">
-         <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"/>
-         <link rel="stylesheet" type="text/css" href="stylesheets/brinascode.css"/>
-         <link rel="icon" href="images/favion.ico">
-        <base href="/">
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/main.css" >
+        <!-- Font Awesome  <link rel="stylesheet"  href="styles/css/all.css"/>-->
+        <link rel="shortcut icon" type="image/png" href="images/logo-light.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script src="js/generateSite.js"></script> -->
     </head>
 
-    <body id="body" class="row">
-                        
-                                
-        <!-- White bar-->
-         <div  class="row" 
-         style="background-color:white;box-shadow: 5px 6px #000000">
-                <div class="col-md-12 col-lg-12 col-sm-12">
-                        <h1 style="margin-left:5%;color:black;font-family:Arial Black;font-size:3vw"> 
-                            < Brina's Code />   
-                            
+    <body style="overflow-x:hidden;margin:auto;">
 
-                        </h1> 
+                                    <!-------------------Navbar--------------------->
+        <nav> 
+            <img id="site-logo" src="./images/logo-light.png" width="12%" style="position:relative;" class="flip-hover nav-item">
+            <h3 style="position:relative;float:right;top:20%;font-family:Dosis"> <a href="#about">About</a></h3>
+            <h3 style="position:relative;float:right;top:20%;font-family:Dosis">My Work</h3>
+            <h3 style="position:relative;float:right;top:20%;font-family:Dosis">Contact</h3>
+            <!-- <a href="http://instagram.com/brinascode"><img src="./images/instagram-icon.png" alt="instagram-icon" width="5%" style="position:relative;float:right;top:20%" class="social-media-icon nav-item"></a>
+            <a href="http://twitter.com/brinascode"><img src="./images/twitter-icon.png" alt="twitter-icon" width=6%" style="position:relative;float:right;top:20%" class="social-media-icon nav-item" ></a> -->
+        </nav>
+                                     <!-------------------Header--------------------->
+       
+        <header id="header" class="sticky light" style="overflow-x:hidden;overflow-y:hidden;">           <!-- The 'Editor' menu-->
+            <div id="header-left" class="light-editor">
+                <!-- The JS console:-->
+                <!-- <h2><div id="console"></div></h2>   -->
+                <div id="sim-editor" >
+                    <img src="./images/profile-pic-light.png" alt="my-pic" id="center-pic" width="80%"/>
+                         <span class="det">var <span class="var"> greeting </span> </span> =  <span class="str">"Hi there, welcome !"</span> </br></br>
+                                                             <span class="det">const </span> <span class="var"> aboutMe </span> = { </br>
+                                                            <span class="prop" style="text-indent:10px">name: </span> <span class="str">"Sabrina Koumoin"</span>,</br>
+                                                            <span class="prop">passions: </span>  <span class="str">["Web development","Web Design","Machine Learning"]</span>,</br>
+                                                            <span class="prop">programmingLanguages: </span>  <span class="str">["Javascript","Python","Java"]</span>,</br>
+                                                            </br>
+                                                           
+                                                            <span class="obj">console</span>.<span class="met">log</span><span class="str">("Click my logo at the top for a surprise!")</span></br>
+                                                            </br>
+                                                            <span class="var">//Enjoy your visit</span>
+                </div>    
+            </div>
+            <!-- The colorful art / Right Brain---->
+            <div id="header-right" > 
+                <img  id="right-pic" src="./images/pinkblob.png"  width="190%" />
+            </div>
+        </header>
+
+                                                <!-------------------About me--------------------->
+        <section id="about-me" class="niceText sticky light">
+                <div id="about-me-left-top">
+                    <div class="outer-circle" style="float:left;">
+                        <div class="inner-circle">
+                            <section class="circle-content"> 
+                                <h1> <a name="about"></a>About me  </h1> 
+                            </section> 
+                        </div>
+                    </div>
+                    <div >
+                    A bunch of text here"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                    facilis est et expedita distinctio.  facilis est et expedita distinctio.  facilis est et expedita distinctio.  facilis est et expedita distinctio. 
+                    </div>
+                </div>
+
+                <div id="about-me-right" class="light niceText"=> 
+                    <div id="about-me-right-top">
+                        <div class="outer-circle" style="float:right;">
+                            <div class="inner-circle">
+                                <section class="circle-content"> 
+                                    <h1> Right brain </h1> 
+                                </section> 
+                            </div>
+                        </div>
+                        <div>
+                        Im a sthing of text here"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                        facilis est et expedita distinctio.  facilis est et expedita distinctio.  facilis est et expedita distinctio.  facilis est et expedita distinctio. 
+                        </div>
+                    </div>
+                </div>
+
+                <div id="about-me-left-bottom" >
+                    <div class="outer-circle" id="left-brain-circle">
+                        <div class="inner-circle">
+                            <section class="circle-content"> 
+                                <h1> Left Brain  </h1> 
+                            </section> 
+                        </div>
+                    </div>
+                    A bunch of text here"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                    facilis est et expedita distinctio.  facilis est et expedita distinctio.  facilis est et expedita distinctio.  facilis est et expedita distinctio. 
+                </div>
+         
+     </section>
+
+                                            <!-------------------Exploreifconfig |egrep -o  '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+'  | head -1--------------------->
+     <section id="my-work" class="sticky light">
+       
+        <div id="header-left" style="background-color:orange" >
+            <h1 class="title" >Check out my work!<h1></h1>
+           <img src="images/withring.png" width="70%" style="position:relative;left:67%"/>
+           <div id="work-flex-container">
+            <div class="work-flex-item" style="background-image:url('images/items/afribellelanding.png');background-size:100%;background-position:center">
+               <span class="item-info">
+                   <strong>About</strong>
+                   <i class="fas fa-info-circle">iii</i>
+               </span>
+            </div>
+            <div class="work-flex-item" style="background-image:url('images/items/afribelle.png');background-size:100%;background-position:center">
+                <span class="item-info">
+                    <strong>About</strong>
+                </span>
+            </div>
+       
+             <div class="work-flex-item" style="background-image:url('images/items/unineeds.png');background-size:100%;background-position:center">
+                <span class="item-info">
+                    <strong>About</strong>
+                </span>
+            </div>
+           
+            <div class="work-flex-item" style="background-image:url('images/items/myjournal.jpg');background-size:100%;background-position:center">
+                <span class="item-info">
+                    <strong>About</strong>
+                </span>
+            </div>
+            <div class="work-flex-item" style="background-image:url('images/items/dressup.jpg');background-size:100%;background-position:center">
+                <span class="item-info">
+                    <strong>i</strong>
+                </span>
+            </div>
+            <div class="work-flex-item" style="background-image:url('images/items/hangman.jpg');background-size:100%;background-position:center">
+                <span class="item-info">
+                    <strong>About</strong>
+                </span>
+            </div>
+            <div class="work-flex-item" style="background-image:url('images/items/braintheme.png');background-size:100%;background-position:center">
+                <span class="item-info">
+                    <strong>About</strong>
+                </span>
+            </div>
+            <div class="work-flex-item" style="background-image:url('images/items/newtheme.png');background-size:100%;background-position:center">
+                <span class="item-info">
+                    <strong>About</strong>
+                </span>
+            </div>
+                
+        </div>
+        </div>
+        <div id="header-right" style="background-color:purple"> 
+            Stuff
+        </div>
+     </section>
+                                            <!-------------------My Work--------------------->
+     <section id="my-work" class="sticky light">
+        <div id="work-section">
+        </br></br> 
+                <div id="work-flex-container">
+                    <div class="work-flex-item" style="background-image:url('images/items/afribellelanding.png');background-size:100%;background-position:center">
+                       <span class="item-info">
+                           <strong>About</strong>
+                           <i class="fas fa-info-circle">iii</i>
+                       </span>
+                    </div>
+                    <div class="work-flex-item" style="background-image:url('images/items/afribelle.png');background-size:100%;background-position:center">
+                        <span class="item-info">
+                            <strong>About</strong>
+                        </span>
+                    </div>
+               
+                     <div class="work-flex-item" style="background-image:url('images/items/unineeds.png');background-size:100%;background-position:center">
+                        <span class="item-info">
+                            <strong>About</strong>
+                        </span>
+                    </div>
+                   
+                    <div class="work-flex-item" style="background-image:url('images/items/myjournal.jpg');background-size:100%;background-position:center">
+                        <span class="item-info">
+                            <strong>About</strong>
+                        </span>
+                    </div>
+                    <div class="work-flex-item" style="background-image:url('images/items/dressup.jpg');background-size:100%;background-position:center">
+                        <span class="item-info">
+                            <strong>i</strong>
+                        </span>
+                    </div>
+                    <div class="work-flex-item" style="background-image:url('images/items/hangman.jpg');background-size:100%;background-position:center">
+                        <span class="item-info">
+                            <strong>About</strong>
+                        </span>
+                    </div>
+                    <div class="work-flex-item" style="background-image:url('images/items/braintheme.png');background-size:100%;background-position:center">
+                        <span class="item-info">
+                            <strong>About</strong>
+                        </span>
+                    </div>
+                    <div class="work-flex-item" style="background-image:url('images/items/newtheme.png');background-size:100%;background-position:center">
+                        <span class="item-info">
+                            <strong>About</strong>
+                        </span>
+                    </div>
+                        
                 </div>
         </div>
-
-        
-       <div class="row" style="height:92%" id="leftBrain">
-           <div class="col-md-6 col-lg-6 col-sm-6">
-                <center> <h1 style="color:white;font-family:Arial Black"> Left Brain </h1> </center>
-               <center>
-                   
-                    <h3> <a href="#view" id="apps" onclick="selectView('apps')">  Web apps  </a> </h3> 
-                    <h3> <a href="#view" id="games" onclick="selectView('games')">Games</a></h3> 
-               </center>
-               <img src="images/leftbrain2.png" width="60%" style="overflow:hidden;margin-top:8%;margin-right:50%;position:relative">
-           </div>
-
-            <div class="col-md-6 col-lg-6 col-sm-6" >
-                <center><h1 style="color:white;font-family:Arial Black"> Right  Brain </h1> </center>
-                <center>
-                   
-                        <h3> <a href="#view" id="designs" onclick="selectView('designs')"> Web design </a></h3>  
-                        <h3> <a href="#view" onclick="selectView('about')"> Digital Art </a></h3> 
-                        <h3> <a href="#view" onclick="selectView('about')"> About me </a></h3> 
-               </center>
-               <img src="images/rightbrain2.png" width="60%" style="overflow:hidden;margin-top:6%;margin-left:48%;position:relative">
+        <div class="outer-square">
+            <div  style="position:absolute;top:25%;left:90%;color:black;font-family:Nickainley;font-size:4vw">My Work</div>
+            <div class="border-triangle">
             </div>
         </div>
-           
+     </section>
 
-        <!-- The Afro head-->
-        <center>
-             <img src="images/logo2.png" width="55%" style="margin-top:-53.8%;transform:rotate(0deg)" id="back-top"/>
-        </center>
-             
-        
-        
-         <!-- Where the views are loaded-->    
-         <article class="sl-content row" id="view" style="margin-top:-4%">
-
-                <article class="sl-content">
-
-                                <!-- First section-->
-                    <span>
-                        <h1 > Hello world ! 
-                        </h1>
-                        <p>
-                            Welcome to my porfolio! 
-                            <span class="glyphicon glyphicon-icon-info-sign"></span>  <br>
-                            My name is Sabrina Koumoin, I am rising junior at Marymount University majoring in Computer Science. 
-                           I program web apps and games, and design websites and a variety of other things like 
-                           flyers,banners,icons,digital drawings and the girl's head above!  <br>
-                        </p>
-                                   <!-- Skills-->
-                        <h2 style="font-family:Courier"> 
-                            My Skills and Coding Tools 
-                        </h2>
-                    </span>
-                               <!-- Coding-->
-                    <span>
-                        <h2 > 
-                            Coding languages and frameworks
-                        </h2>
-                        <p> The apps and games in this portfolio are programmed in Javascript (plain or using the MEAN stack) and hosted either on Github or Heroku. </p>
-                        <p>
-                            <img src="images/javascript.png" alt="icon" width="3%" />
-                            Javascript (Proficient): Plain + 
-                            Frameworks: MEAN Stack (MongoDB, Express,Angular,NodeJS)
-                            and MERN (+ React JS)
-                        </p>
-                        <p>
-                            <img src="images/python.ico" alt="icon" width="3%" />
-                            Python (Intermediate)
-                        </p>
-                        <p><img src="images/java.png" alt="icon" width="3%" />
-                            JAVA (Novice)
-                        </p>  
-
-                    </span>
-                    
-                                <!-- UI/CSS design-->
-                    <span>
-                        <h2 style=""> 
-                            UI/UX/CSS design
-                        </h2>
-                        <p> I made the designs for the apps and games as well, not only for the websites listed under the design section. 
-                           For the games, I also drew the characters using PaintShop and Gimp.  </p>
-                        <p>
-                            <img src="images/html.png" alt="icon" width="3%" />
-                            HTML
-                        </p>
-                         <p>
-                            <img src="images/css.png" alt="icon" width="3%" />
-                            CSS
-                        </p>
-                        <p>
-                            <img src="images/bootstrap.png" alt="icon" width="3%" />
-                            Bootstrap
-                        </p>
-
-                        
-                    </span>
-                                <!-- Real Languages-->
-
-                     <span>
-                        <h3 > 
-                            Languages
-                        </h3>
-                       <p>I am fluent in English, French and Spanish.</p>
-                    </span>
-
-                                <!-- Social Media-->
-                    <span>
-                        <h3 > 
-                            You can follow me on social media:
-                        </h3>
-                        <a href="https://github.com/brinascode">
-                            <img src="images/github-icon.png" alt="icon" width="3%" />Github
-                        </a>              
-                        <a href="https://twitter.com/lamadametech">
-                            <img src="images/twitter-icon.png" alt="icon" width="3%" />
-                             @lamadametech
-                        </a>
-                        <a href="https://medium.com/@sabrinakoumoin">
-                            <img src="images/medium.png" alt="" width="3%" />
-                             My Medium Blog
-                        </a>
-                    </span>
-
-                    
-
-                </article>
-                
-
-
-              <a href="#back-top">Back to top</a>
-         </article>
-                       
-    <script src="javascripts/brinascode.js"></script>
-
+   
+     
+     <br>
+     <footer style="background-color:black">
+        &copy; 2020 Sabrina Koumoin
+     </footer>
+     
     </body>
-
-
 </html>
+
+
+

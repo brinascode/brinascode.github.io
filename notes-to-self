@@ -1,0 +1,13 @@
+The index.html is only has the header so far.
+The console is created dynamically from the generateSite js.
+
+Doing:
+--I am currently working on the console
+-- working on the color schemes --> idk why +,=,{} are not getting colored properly. .txt didnt even work had to change the class name
+-- Making the site responsive 
+
+
+Learned how to code at 12
+
+Features to add:
+My work map/resume --> do this later

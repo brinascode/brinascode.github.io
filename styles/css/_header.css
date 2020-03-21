@@ -1,0 +1,51 @@
+header {
+  background-color: green;
+  border-bottom: solid black;
+  height: 80vh;
+  width: 100vw;
+}
+
+nav {
+  box-shadow: aliceblue;
+  width: 100vw;
+  padding: 4px;
+}
+
+#site-title {
+  font-family: Nickainley;
+  font-size: 10vh;
+  margin: 0;
+}
+
+#left-pic {
+  margin-left: -18vw;
+}
+
+#header-left {
+  display: inline-block;
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#center-pic {
+  margin-left: -250px;
+  margin-top: 10px;
+  float: left;
+  padding: 10px;
+  clip-path: circle();
+  shape-outside: circle();
+}
+
+#header-right {
+  display: inline-block;
+  background-color: purple;
+  width: 49%;
+  height: 76%;
+  position: absolute;
+  left: 50.5vw;
+  z-index: 2;
+  padding: 3%;
+}
