@@ -1,6 +1,7 @@
 #my-work{
     width:100vw;
     height:100vh;
+    background-color:white;
 }
 
 .outer-square{
@@ -63,4 +64,17 @@
     padding:3%;
     position:relative;
     top:100%
+}
+
+#apps-image-container{
+    height:30vh;
+    margin-bottom:40vh
+}
+
+@media only scresen and (max-width:500px){
+    .work-flex-item{
+        width:100%;
+        height:50vh;
+        background-color:purple;
+    }
 }
