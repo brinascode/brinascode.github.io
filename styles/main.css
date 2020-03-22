@@ -6,7 +6,8 @@ header {
 
 nav {
   overflow-x: hidden;
-  box-shadow: aliceblue;
+  -webkit-box-shadow: aliceblue;
+          box-shadow: aliceblue;
   width: 100vw;
   height: 10.5vw;
   padding: auto;
@@ -16,19 +17,33 @@ nav {
   width: 5%;
 }
 
+@-webkit-keyframes flipY {
+  from {
+  }
+  to {
+    -webkit-tansform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    background-color: 2s;
+  }
+}
+
 @keyframes flipY {
   from {
   }
   to {
     -webkit-tansform: rotateY(180deg);
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     background-color: 2s;
   }
 }
 
 .flip-hover:hover {
-  animation: flipY;
-  animation-duration: 2s;
+  -webkit-animation: flipY;
+          animation: flipY;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #sim-editor {
@@ -51,13 +66,14 @@ nav {
 
 #center-pic {
   float: right;
-  clip-path: circle();
+  -webkit-clip-path: circle();
+          clip-path: circle();
   shape-outside: circle();
 }
 
 #header-right {
   display: inline-block;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   width: 49%;
   height: 30vw;
   position: absolute;
@@ -146,8 +162,10 @@ nav {
   border-radius: 50%;
   width: 20vw;
   height: 20vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fe19aa), to(#ffbd59));
   background-image: linear-gradient(to right, #fe19aa, #ffbd59);
-  clip-path: circle();
+  -webkit-clip-path: circle();
+          clip-path: circle();
   shape-outside: circle();
 }
 
@@ -230,6 +248,7 @@ nav {
 .outer-square {
   width: 30vw;
   height: 30vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fe19aa), to(#ffbd59));
   background-image: linear-gradient(to right, #fe19aa, #ffbd59);
   float: right;
   z-index: -1;
@@ -259,28 +278,32 @@ nav {
 }
 
 #work-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .work-flex-item {
-  border: solid black;
   height: 300px;
-  width: 45%;
+  width: 40%;
   margin-bottom: 3%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .item-info {
-  float: right;
   border: solid black;
   border-width: 2px;
   border-radius: 50%;
   background-color: white;
   padding: 3%;
   position: relative;
-  bottom: 10%;
-  left: 4%;
+  top: 100%;
 }
 
 @font-face {
@@ -289,6 +312,7 @@ nav {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -297,3 +321,4 @@ nav {
   font-family: "Nickainley";
   font-size: 5vw;
 }
+/*# sourceMappingURL=main.css.map */

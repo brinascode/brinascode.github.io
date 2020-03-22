@@ -45,21 +45,22 @@
 }
 
 .work-flex-item{
-    border:solid black;
+    // border:solid black;
     height:300px;
-    width:45%;
+    width:40%;
     margin-bottom:3%; 
     // padding:5%;
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .item-info{
-    float:right;
     border:solid black;
     border-width:2px;
     border-radius:50%;
     background-color:white;
     padding:3%;
     position:relative;
-    bottom:10%;
-    left:4%
+    top:100%
 }
