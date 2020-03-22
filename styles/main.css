@@ -262,7 +262,7 @@ nav {
 
 #work-section {
   position: absolute;
-  width: 69vw;
+  width: 100vw;
   height: 80%;
   z-index: 1;
 }
@@ -289,7 +289,7 @@ nav {
 
 .work-flex-item {
   height: 300px;
-  width: 40%;
+  width: 30%;
   margin-bottom: 3%;
   background-size: 100%;
   background-position: center;
@@ -297,10 +297,6 @@ nav {
 }
 
 .item-info {
-  border: solid black;
-  border-width: 2px;
-  border-radius: 50%;
-  background-color: white;
   padding: 3%;
   position: relative;
   top: 100%;
