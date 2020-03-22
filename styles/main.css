@@ -5,12 +5,22 @@ header {
 }
 
 nav {
-  overflow-x: hidden;
+  overflow: hidden;
   -webkit-box-shadow: aliceblue;
           box-shadow: aliceblue;
   width: 100vw;
   height: 10.5vw;
   padding: auto;
+  padding-right: 50vw;
+}
+
+.nav-link {
+  position: relative;
+  float: right;
+  top: 20%;
+  font-family: Dosis;
+  margin-left: 2vw;
+  font-size: 2.3vw;
 }
 
 .social-media-icon:hover {
@@ -242,7 +252,7 @@ nav {
 
 #my-work {
   width: 100vw;
-  height: 100vh;
+  overflow: auto;
   background-color: white;
 }
 
@@ -262,10 +272,11 @@ nav {
 }
 
 #work-section {
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 80%;
   z-index: 1;
+  margin-bottom: 8vw;
 }
 
 .work-nav {
@@ -286,6 +297,7 @@ nav {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow-y: auto;
 }
 
 .work-flex-item {
@@ -304,15 +316,31 @@ nav {
 }
 
 #apps-image-container {
+  width: 100%;
   height: 30vh;
-  margin-bottom: 40vh;
+  margin-bottom: 20vw;
 }
 
-@media only scresen and (max-width: 500px) {
+#apps-image-container .title {
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 37%;
+  top: 26vw;
+}
+
+@media only screen and (max-width: 500px) {
   .work-flex-item {
     width: 100%;
     height: 50vh;
-    background-color: purple;
+  }
+  #apps-image-container {
+    margin-bottom: 2vw;
+  }
+  #apps-image-container .title {
+    position: relative;
+    font-size: 8vw;
+    left: 5%;
   }
 }
 
@@ -327,8 +355,25 @@ nav {
   top: 0;
 }
 
+.sticky-bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
 .title {
   font-family: "Nickainley";
   font-size: 5vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  overflow-x: hidden;
+  margin: auto;
+  padding: auto;
 }
 /*# sourceMappingURL=main.css.map */

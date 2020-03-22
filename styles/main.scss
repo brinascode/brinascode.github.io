@@ -17,9 +17,23 @@ $images_dir:"./images/"; //how to share variables across files?
   top: 0;
 }
 
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
 .title{
   font-family: "Nickainley";
   font-size:5vw;
 }
 
+a{
+    text-decoration: none;
+    color:black;
+}
 
+body{
+    overflow-x:hidden;
+    margin:auto;
+    padding:auto;
+}

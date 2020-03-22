@@ -12,14 +12,16 @@
         <!-- <script src="js/generateSite.js"></script> -->
     </head>
 
-    <body style="overflow-x:hidden;margin:auto;">
+    <body>
 
                                     <!-------------------Navbar--------------------->
         <nav> 
-            <img id="site-logo" src="./images/logo-light.png" width="12%" style="position:relative;" class="flip-hover nav-item">
-            <h3 style="position:relative;float:right;top:20%;font-family:Dosis"> <a href="#about">About</a></h3>
-            <h3 style="position:relative;float:right;top:20%;font-family:Dosis">My Work</h3>
-            <h3 style="position:relative;float:right;top:20%;font-family:Dosis">Contact</h3>
+            <img id="site-logo" src="./images/logo-light.png" width="12%" class="flip-hover nav-item">
+           <span >
+                <h3 class="nav-link"> <a href="#about">About</a></h3>
+                <h3 class="nav-link">My Work</h3>
+                <h3 class="nav-link">Contact</h3>
+           </span>
             <!-- <a href="http://instagram.com/brinascode"><img src="./images/instagram-icon.png" alt="instagram-icon" width="5%" style="position:relative;float:right;top:20%" class="social-media-icon nav-item"></a>
             <a href="http://twitter.com/brinascode"><img src="./images/twitter-icon.png" alt="twitter-icon" width=6%" style="position:relative;float:right;top:20%" class="social-media-icon nav-item" ></a> -->
         </nav>
@@ -97,12 +99,12 @@
 
                                             <!-------------------Exploreifconfig |egrep -o  '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+'  | head -1--------------------->
                            <!-------------------My Work verticl;--------------------->
-     <section id="my-work" class="niceText sticky" >
+     <section id="my-work" class="niceText sticky">
     
        <div id="apps-image-container">
-                <img src="images/withring.png" width="30%" style="left:38%;position:absolute;top:0px;left:38%;" /> 
+                <img src="images/withring.png" width="30%" style="left:38%;position:relative;top:0px;left:38%;" /> 
                     <br></br>
-                    <h2 class="title" style="text-align:center;display:inline-block;position:absolute;left:38%;top:26vw">Checkout my work!</h2>
+                    <h2 class="title" >Check out my work</h2>
         </div> 
            
         <div id="work-section">
@@ -152,20 +154,18 @@
                             
             </div>
         </div>
-       
-        <div class="outer-square">
-            <div  style="position:absolute;top:25%;left:90%;color:black;font-family:Nickainley;font-size:4vw"><!--My Work--></div>
-            <div class="border-triangle">
-            </div>
-        </div>
      </section>
 
-   
-     
-     <br>
-     <footer style="background-color:black">
-        &copy; 2020 Sabrina Koumoin
-     </footer>
+    <section style="position:relative;margin-top:10vw" class="niceText">
+           <h1 class="title" style="padding:10px;"> <br></br>Contact</h1>
+            <div class="outer-square">
+                <div  style="position:absolute;top:25%;left:90%;color:black;font-family:Nickainley;font-size:4vw"><!--My Work--></div>
+                <div class="border-triangle">
+                </div>
+                
+            </div>
+    </section>
+  
      
     </body>
 </html>

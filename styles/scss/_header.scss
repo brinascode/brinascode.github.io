@@ -7,14 +7,23 @@ header {
 }
 
 nav{
-    overflow-x: hidden;
+    overflow: hidden;
     box-shadow:aliceblue;
     width:100vw;
     height:10.5vw;
     // padding:5px;
     padding:auto;
+    padding-right:50vw;
 }
 
+.nav-link{
+    position:relative;
+    float:right;
+    top:20%;
+    font-family:Dosis;
+    margin-left:2vw;
+    font-size:2.3vw;
+}
 
 .social-media-icon {
     &:hover{
