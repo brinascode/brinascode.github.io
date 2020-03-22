@@ -5,11 +5,24 @@ header {
 }
 
 nav {
-  overflow-x: hidden;
+  overflow: hidden;
   box-shadow: aliceblue;
-  width: 100vw;
+  width: 98vw;
   height: 10.5vw;
   padding: auto;
+}
+
+#phone-nav {
+  display: none;
+}
+
+.nav-link {
+  position: relative;
+  float: right;
+  top: 20%;
+  font-family: Dosis;
+  margin-left: 2vw;
+  font-size: 2.3vw;
 }
 
 .social-media-icon:hover {
@@ -78,6 +91,15 @@ nav {
     font-size: 5vw;
   }
   nav {
-    height: 0px;
+    display: none;
+  }
+  #phone-nav {
+    display: inline-block;
+    font-family: Dosis;
+    font-size: 6vw;
+    padding: auto;
+    color: black;
+    width: 100%;
+    font-weight: 50px;
   }
 }

@@ -9,11 +9,14 @@ header {
 nav{
     overflow: hidden;
     box-shadow:aliceblue;
-    width:100vw;
+    width:98vw;
     height:10.5vw;
     // padding:5px;
     padding:auto;
-    padding-right:50vw;
+}
+
+#phone-nav{
+    display:none;
 }
 
 .nav-link{
@@ -114,6 +117,18 @@ nav{
     }
 
     nav{
-        height:0px;
+        display:none;
+        
+    }
+
+    #phone-nav{
+        display:inline-block;
+        font-family:Dosis;
+        font-size:6vw;
+        padding:auto;
+        color:black;
+        // border-bottom:solid black;
+        width:100%;
+        font-weight:50px;
     }
 }

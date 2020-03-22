@@ -1,0 +1,31 @@
+.text {
+  color: red;
+}
+
+.det {
+  color: #ec58b6;
+}
+
+.str {
+  color: #161616;
+}
+
+.prop {
+  color: #da6028;
+}
+
+.num {
+  color: #ec5a56;
+}
+
+.obj {
+  color: #dca519;
+}
+
+.met {
+  color: #ec58b6;
+}
+
+.var {
+  color: #2cd6d1;
+}

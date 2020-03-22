@@ -1,11 +1,11 @@
 $text: red;//#aeb1c3;      
 $determiner: #ec58b6; //
-$string: #dca519;     //
-$objProperty:#1a749c; //
+$string: rgb(22, 22, 22);  //dca519 yellow //
+$objProperty:#da6028; //# 1a749c dark blue
 $number:#ec5a56;      //
-$object:#56bbb7;      //
-$method:#63b1f0;      // 
-$variables:#6c6e7d; // --> should be the default, and then the other symbols rather take the color...
+$object:#dca519;   //#56bbb7 green   //
+$method:#ec58b6; // #63b1f0 light blue     // 
+$variables:#2cd6d1; //#6c6e7d gray// --> should be the default, and then the other symbols rather take the color...
 
 .text {
     color:$text;

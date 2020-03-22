@@ -6,12 +6,14 @@ header {
 
 nav {
   overflow: hidden;
-  -webkit-box-shadow: aliceblue;
-          box-shadow: aliceblue;
-  width: 100vw;
+  box-shadow: aliceblue;
+  width: 98vw;
   height: 10.5vw;
   padding: auto;
-  padding-right: 50vw;
+}
+
+#phone-nav {
+  display: none;
 }
 
 .nav-link {
@@ -27,33 +29,19 @@ nav {
   width: 5%;
 }
 
-@-webkit-keyframes flipY {
-  from {
-  }
-  to {
-    -webkit-tansform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    background-color: 2s;
-  }
-}
-
 @keyframes flipY {
   from {
   }
   to {
     -webkit-tansform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    transform: rotateY(180deg);
     background-color: 2s;
   }
 }
 
 .flip-hover:hover {
-  -webkit-animation: flipY;
-          animation: flipY;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation: flipY;
+  animation-duration: 2s;
 }
 
 #sim-editor {
@@ -76,14 +64,13 @@ nav {
 
 #center-pic {
   float: right;
-  -webkit-clip-path: circle();
-          clip-path: circle();
+  clip-path: circle();
   shape-outside: circle();
 }
 
 #header-right {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   width: 49%;
   height: 30vw;
   position: absolute;
@@ -104,7 +91,16 @@ nav {
     font-size: 5vw;
   }
   nav {
-    height: 0px;
+    display: none;
+  }
+  #phone-nav {
+    display: inline-block;
+    font-family: Dosis;
+    font-size: 6vw;
+    padding: auto;
+    color: black;
+    width: 100%;
+    font-weight: 50px;
   }
 }
 
@@ -117,11 +113,11 @@ nav {
 }
 
 .str {
-  color: #dca519;
+  color: #161616;
 }
 
 .prop {
-  color: #1a749c;
+  color: #da6028;
 }
 
 .num {
@@ -129,15 +125,15 @@ nav {
 }
 
 .obj {
-  color: #56bbb7;
+  color: #dca519;
 }
 
 .met {
-  color: #63b1f0;
+  color: #ec58b6;
 }
 
 .var {
-  color: #6c6e7d;
+  color: #2cd6d1;
 }
 
 .light {
@@ -172,10 +168,8 @@ nav {
   border-radius: 50%;
   width: 20vw;
   height: 20vw;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fe19aa), to(#ffbd59));
   background-image: linear-gradient(to right, #fe19aa, #ffbd59);
-  -webkit-clip-path: circle();
-          clip-path: circle();
+  clip-path: circle();
   shape-outside: circle();
 }
 
@@ -259,7 +253,6 @@ nav {
 .outer-square {
   width: 30vw;
   height: 30vw;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fe19aa), to(#ffbd59));
   background-image: linear-gradient(to right, #fe19aa, #ffbd59);
   float: right;
   z-index: -1;
@@ -276,7 +269,7 @@ nav {
   width: 100vw;
   height: 80%;
   z-index: 1;
-  margin-bottom: 8vw;
+  margin-bottom: 30vw;
 }
 
 .work-nav {
@@ -290,13 +283,9 @@ nav {
 }
 
 #work-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   overflow-y: auto;
 }
 
@@ -350,13 +339,11 @@ nav {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
 .sticky-bottom {
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
 }
@@ -376,4 +363,3 @@ body {
   margin: auto;
   padding: auto;
 }
-/*# sourceMappingURL=main.css.map */

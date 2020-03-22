@@ -1,6 +1,7 @@
 #my-work {
   width: 100vw;
-  height: 100vh;
+  overflow: auto;
+  background-color: white;
 }
 
 .outer-square {
@@ -18,10 +19,11 @@
 }
 
 #work-section {
-  position: absolute;
-  width: 69vw;
+  position: relative;
+  width: 100vw;
   height: 80%;
   z-index: 1;
+  margin-bottom: 30vw;
 }
 
 .work-nav {
@@ -38,23 +40,49 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  overflow-y: auto;
 }
 
 .work-flex-item {
-  border: solid black;
   height: 300px;
-  width: 45%;
+  width: 30%;
   margin-bottom: 3%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .item-info {
-  float: right;
-  border: solid black;
-  border-width: 2px;
-  border-radius: 50%;
-  background-color: white;
   padding: 3%;
   position: relative;
-  bottom: 10%;
-  left: 4%;
+  top: 100%;
+}
+
+#apps-image-container {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 20vw;
+}
+
+#apps-image-container .title {
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 37%;
+  top: 26vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .work-flex-item {
+    width: 100%;
+    height: 50vh;
+  }
+  #apps-image-container {
+    margin-bottom: 2vw;
+  }
+  #apps-image-container .title {
+    position: relative;
+    font-size: 8vw;
+    left: 5%;
+  }
 }
