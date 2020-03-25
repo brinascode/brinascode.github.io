@@ -127,8 +127,11 @@ nav{
         font-size:6vw;
         padding:auto;
         color:black;
-        // border-bottom:solid black;
         width:100%;
         font-weight:50px;
+        box-shadow:5px 5px black;
+        position:sticky;
+        top:0px;
+        
     }
 }
