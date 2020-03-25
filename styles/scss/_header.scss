@@ -130,8 +130,11 @@ nav{
         width:100%;
         font-weight:50px;
         box-shadow:5px 5px black;
-        position:sticky;
-        top:0px;
-        
+        position:fixed;
+         
+    }
+
+    header{
+        position:fixed;
     }
 }

@@ -12,9 +12,7 @@ var githubRoot = "https://github.com/brinascode"
                                     ${item.description}
                                      <br></br>
                                     <br></br>
-                                </span>
-                                   
-                                 
+                                </span>   
                             </div>`
                            
                         )
