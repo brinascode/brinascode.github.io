@@ -1,0 +1,36 @@
+.outer-square{
+    width:30vw;
+    height:30vw;
+    background-image: linear-gradient(to right,#fe19aa,#ffbd59);
+    float:right;
+    // border:solid black;
+    z-index:-1;
+}
+
+.border-triangle{
+    border:solid;
+    border-width:15vw 15vw 15vw 15vw;
+    border-color:white transparent white white;
+
+}
+
+.outer-square2{
+    width:30vw;
+    height:30vw;
+    background-image: linear-gradient(to right,#ffbd59,#fe19aa);
+    float:left;
+    // border:solid black;
+    z-index:-1;
+}
+.border-triangle2{
+    border:solid;
+    border-width:15vw 15vw 15vw 15vw;
+    border-color:white white white transparent;
+}
+
+footer{
+    position:relative;
+    top:10vw;
+    width:100%;
+    background-color:white;
+}

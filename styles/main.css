@@ -110,20 +110,60 @@ nav {
     display: none;
   }
   #phone-nav {
-    display: inline-block;
+    display: block;
     font-family: Dosis;
     font-size: 6vw;
-    padding: auto;
     color: black;
     width: 100%;
     font-weight: 50px;
-    -webkit-box-shadow: 5px 5px black;
-            box-shadow: 5px 5px black;
+    -webkit-box-shadow: 5px 2px 30px pink;
+            box-shadow: 5px 2px 30px pink;
     position: fixed;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
+    padding: 1vw;
   }
-  header {
-    position: fixed;
+  #header {
+    margin-top: 4vw;
   }
+}
+
+.outer-square {
+  width: 30vw;
+  height: 30vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fe19aa), to(#ffbd59));
+  background-image: linear-gradient(to right, #fe19aa, #ffbd59);
+  float: right;
+  z-index: -1;
+}
+
+.border-triangle {
+  border: solid;
+  border-width: 15vw 15vw 15vw 15vw;
+  border-color: white transparent white white;
+}
+
+.outer-square2 {
+  width: 30vw;
+  height: 30vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffbd59), to(#fe19aa));
+  background-image: linear-gradient(to right, #ffbd59, #fe19aa);
+  float: left;
+  z-index: -1;
+}
+
+.border-triangle2 {
+  border: solid;
+  border-width: 15vw 15vw 15vw 15vw;
+  border-color: white white white transparent;
+}
+
+footer {
+  position: relative;
+  top: 10vw;
+  width: 100%;
+  background-color: white;
 }
 
 .text {
@@ -270,38 +310,8 @@ nav {
 
 #my-work {
   width: 100vw;
-  overflow: auto;
+  overflow-x: hidden;
   background-color: white;
-}
-
-.outer-square {
-  width: 30vw;
-  height: 30vw;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fe19aa), to(#ffbd59));
-  background-image: linear-gradient(to right, #fe19aa, #ffbd59);
-  float: right;
-  z-index: -1;
-}
-
-.border-triangle {
-  border: solid;
-  border-width: 15vw 15vw 15vw 15vw;
-  border-color: white transparent white white;
-}
-
-.outer-square2 {
-  width: 30vw;
-  height: 30vw;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffbd59), to(#fe19aa));
-  background-image: linear-gradient(to right, #ffbd59, #fe19aa);
-  float: left;
-  z-index: -1;
-}
-
-.border-triangle2 {
-  border: solid;
-  border-width: 15vw 15vw 15vw 15vw;
-  border-color: white white white transparent;
 }
 
 #work-section {
@@ -335,8 +345,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
-  margin: 0;
 }
 
 .work-flex-item {
@@ -364,7 +372,6 @@ nav {
   .work-flex-item {
     width: 100%;
     height: auto;
-    padding: 2vw;
   }
   #apps-image-container {
     margin-bottom: 2vw;
@@ -396,6 +403,7 @@ nav {
 .title {
   font-family: "Nickainley";
   font-size: 5vw;
+  color: purple;
 }
 
 a {
@@ -407,5 +415,24 @@ body {
   overflow-x: hidden;
   margin: auto;
   padding: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 3vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */

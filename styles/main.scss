@@ -1,11 +1,11 @@
 @import "./scss/header.scss";
+@import "./scss/footer.scss";
 @import "./scss/header-console-colors.scss";
 @import "./scss/theme.scss";
 @import "./scss/about-me";
 @import "./scss/my-work";
 
 $images_dir:"./images/"; //how to share variables across files?
-
 
 @font-face {
   font-family: Nickainley;
@@ -25,6 +25,7 @@ $images_dir:"./images/"; //how to share variables across files?
 .title{
   font-family: "Nickainley";
   font-size:5vw;
+  color:purple;
 }
 
 a{
@@ -36,4 +37,16 @@ body{
     overflow-x:hidden;
     margin:auto;
     padding:auto;
+    display:flex;
+        flex-flow:row wrap;
+        align-items: center;
+        justify-content: center;
+}
+
+@media only screen and (max-width:500px){
+    body{
+        padding:3vw;
+        
+
+    }
 }
