@@ -4,4 +4,4 @@ The portfolio can be accessed at http://brinascode.tech
 and the blog at http://brinascode.tech/blog
 
 
-![Site](/images/portfolio/hybrid.png)
+![Site](/images/portfolio/items/newlook.png)
