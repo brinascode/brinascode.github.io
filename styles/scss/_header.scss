@@ -53,9 +53,6 @@ nav{
 }
 
 
-
-
-
 #sim-editor{
     font-family:Monaco;
     font-size:1.5vw;
@@ -128,7 +125,7 @@ nav{
         color:black;
         width:100%;
         font-weight:50px;
-        box-shadow:5px 2px 30px pink;
+        box-shadow:5px 2px 30px #ffbd59;
         // border-bottom:solid black 8px;
         position:fixed;
         top:0px;
@@ -139,7 +136,7 @@ nav{
     }
 
     #header{
-        margin-top:4vw;
+        margin-top:12vw;
     }
 
     

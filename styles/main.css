@@ -116,8 +116,8 @@ nav {
     color: black;
     width: 100%;
     font-weight: 50px;
-    -webkit-box-shadow: 5px 2px 30px pink;
-            box-shadow: 5px 2px 30px pink;
+    -webkit-box-shadow: 5px 2px 30px #ffbd59;
+            box-shadow: 5px 2px 30px #ffbd59;
     position: fixed;
     top: 0px;
     z-index: 2;
@@ -125,7 +125,7 @@ nav {
     padding: 1vw;
   }
   #header {
-    margin-top: 4vw;
+    margin-top: 12vw;
   }
 }
 
