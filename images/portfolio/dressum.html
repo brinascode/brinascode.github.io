@@ -1,0 +1,232 @@
+﻿<!Doctype>
+
+<html  style=" max-width: 1200px;" >
+    <head>
+        <title> Dressup! </title>
+        <meta charset="utf-8" />
+    </head>
+
+    <style type="text/css">
+
+        img
+        {
+            width: 100%; 
+            height: auto;
+        }
+
+        #doll
+        {
+            background-image:url("doll.png");
+            background-repeat:repeat-x;
+            height:1008px;
+            width:518px;
+        }
+        
+        #room{
+            background-image:url("room.jpg")
+        }
+
+        .draggableBox background-image
+        {
+            width: 100%; 
+            height: auto;
+        }
+
+
+        .draggableBox 
+        {
+           position: absolute;
+           width: 100%; 
+           height: auto;
+           padding-top: 10px;
+           text-align: center;
+           font-size: 40px;
+           background-repeat:no-repeat;
+           color: #CCC;
+           cursor: move;
+        }
+
+
+
+
+        .cool:hover {
+        	transform:scale(1.05,1.05);
+        	transform-origin:0 0;
+        }
+    </style>
+   
+    <body  style="overflow:hidden">
+        
+        <div id="game" style="position:absolute;">
+        </div>
+        
+        <div id="pic" style="margin-left:-30px;">
+            <img src="mane2.png"   alt="the dolls' pic"  style="max-width:100%;heigth:auto;"/>
+        </div>
+        
+        <div id="enter"style="margin-left:500px;margin-top:5px;">    
+            <img src="enter.png"   alt="enter my room!"/>    
+        </div>
+
+    </body>
+
+
+    <script>
+
+        //Logo and first part
+        var logo = document.createElement("div")
+        logo.style.backgroundImage = "url('logo2.png')";
+        logo.style.backgroundRepeat="no-repeat"
+        logo.style.width = 1635+"px"
+        logo.style.height = 255+"px"
+        logo.id= "logo"
+        logo.style.marginTop = -30+"px"
+        logo.style.marginLeft = 290+"px"
+        document.getElementById("game").appendChild(logo)
+
+        //Room decor
+        var room = document.createElement("div")
+        var roomstyles=["url('room2.jpg')","url('islandday.png')"]
+        room.style.backgroundImage = roomstyles[0];
+        room.style.backgroundRepeat="no-repeat"
+        room.style.width =2000+"px"
+        room.style.height = 2000+"px"
+        room.style.marginTop = -5+"px"
+        room.style.marginLeft = -20+"px"
+        room.style.position = "absolute"
+
+        //Travelling
+        var country = document.createElement("button")
+        country.innerHTML= "go to the beach!"
+
+
+        //Doll
+        var doll= document.createElement("div")
+        doll.style.backgroundImage = "url('doll2.png')";
+        doll.style.height =518+"px"
+        doll.style.height = 1008+"px"
+        doll.style.marginTop = -120+"px"
+        doll.style.position = "absolute"
+        doll.className ="draggableBox"
+
+        //Closet and outfits
+        var closet = document.createElement("div")
+        closet.style.backgroundImage= "url('closedoor.png')"
+        closet.style.width = 336+"px"
+        closet.style.height = 591+"px"
+        closet.style.marginTop= 80+"px"
+        closet.style.marginLeft= 650+"px"
+        closet.style.position ="absolute"
+        closet.className="cool"
+        room.appendChild(doll)
+        room.appendChild(closet)
+        room.appendChild(country)
+        var outfits =[document.createElement("div"),document.createElement("div"),document.createElement("div"),document.createElement("div")
+        ,document.createElement("div")]
+        outfits[0].style.height=400+"px"
+        outfits[0].style.width=400+"px"
+        outfits[0].className="draggableBox"
+        outfits[0].style.backgroundImage="url('dress1.png')"
+        outfits[1].style.height=400+"px"
+        outfits[1].style.width=400+"px"
+        outfits[1].className="draggableBox"
+        outfits[1].style.backgroundImage="url('dress2.png')"
+        outfits[2].style.height=400+"px"
+        outfits[2].style.width=400+"px"
+        outfits[2].className="draggableBox"
+        outfits[2].style.backgroundImage="url('dress3.png')"
+        outfits[3].style.height=400+"px"
+        outfits[3].style.width=400+"px"
+        outfits[3].className="draggableBox"
+        outfits[3].style.backgroundImage="url('jeans.png')"
+        outfits[4].style.height=400+"px"
+        outfits[4].style.width=400+"px"
+        outfits[4].className="draggableBox"
+        outfits[4].style.backgroundImage="url('sandals.png')"
+
+
+
+        var enter= document.getElementById("enter")
+        enter.addEventListener("click",function(){
+        document.getElementById("game").appendChild(room)
+        document.getElementById("enter").parentNode.removeChild(enter)
+        document.getElementById("logo").parentNode.removeChild(logo)
+        var pic =document.getElementById("pic")
+        document.getElementById("pic").parentNode.removeChild(pic)
+        }
+        ,false)
+        //Travelling
+        country.addEventListener("click",function(){
+        room.style.backgroundImage=roomstyles[1]
+         closet.parentNode.removeChild(closet)
+         },false)
+
+
+        closet.addEventListener("click",function(){
+        closet.style.backgroundImage="url('opendoor.png')"
+        closet.style.marginLeft= 650+"px"
+        closet.style.width = 544+"px"
+        closet.style.height = 600+"px"
+
+        for(var i=0;i<outfits.length;i++){
+        closet.appendChild(outfits[i])
+        }
+        closet.className="closet"
+        closet.style.marginTop= 70+"px"
+
+        init();
+
+
+
+        },false)
+
+        //From openclassrooms.com
+         var storage = {}; // Contient l'objet de la div en cours de déplacement
+                
+                
+                function addEvent(element, event, func) { 
+                // Une fonction pour gérer les événements sous tous les navigateurs.
+                    if (element.attachEvent) {
+                        element.attachEvent('on' + event, func);
+                    } else {
+                        element.addEventListener(event, func, true);
+                    }
+                }
+                
+                function init() { // La fonction d'initialisation
+                    var elements = document.getElementsByTagName('div'),
+                        elementsLength = elements.length;
+                    
+                    for (var i = 0 ; i < elementsLength ; i++) {
+                        if (elements[i].className === 'draggableBox') {
+                    
+                            addEvent(elements[i], 'mousedown', function(e) { // Initialise le drag & drop
+                                var s = storage;
+                                s.target = e.target || event.srcElement;
+                                s.offsetX = e.clientX - s.target.offsetLeft;
+                                s.offsetY = e.clientY - s.target.offsetTop;
+        						
+                            
+        					});
+                    
+                            addEvent(elements[i], 'mouseup', function() { // Termine le drag & drop
+                                storage = {};
+                            });
+                        }
+                    }
+                    
+                    addEvent(document, 'mousemove', function(e) { // Permet le suivi du drag & drop
+                        var target = storage.target;
+                        
+                        if (target) {
+                            target.style.top = e.clientY - storage.offsetY + 'px';
+                            target.style.left = e.clientX - storage.offsetX + 'px';
+                        }
+                    });
+                }
+                
+        // On initialise le code avec notre fonction toute prête.
+
+    </script>
+
+</html>
