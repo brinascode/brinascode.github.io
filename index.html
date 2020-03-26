@@ -1,310 +1,158 @@
 <!Doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Brinascode</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/style-portfolio.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   </head>
-   
+    <head>
+        <title>Brina's Code</title>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/main.css" >
+        <!-- Font Awesome  <link rel="stylesheet"  href="styles/css/all.css"/>-->
+        <link rel="shortcut icon" type="image/png" href="images/logo-light.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script src="js/generateSite.js"></script> -->
+    </head>
 
+    <body>
 
-<body>
-    <header id="header">
-           
-        <a href="https://www.instagram.com/brinascode/"> 
-           <img id="instagram" style="position:relative;bottom:17vw;right:17vw;float:left" src="images/icons/instagram-white.png" width="5%" alt="icon">
-        </a>
-        <a href="https://twitter.com/brinascode"> 
-            <img id="twitter" style="position:relative;bottom:17vw;right:17vw;float:left" src="images/icons/twitter-white.png" width="5%" alt="icon">
-        </a>
-        <a href="https://github.com/brinascode"> 
-            <img id="github" style="position:relative;bottom:17vw;right:17vw;float:left" src="images/icons/github-white.png" width="4.8%" alt="icon">
-        </a>
+                                    <!-------------------Navbar--------------------->
+        <nav> 
+            <img id="site-logo" src="./images/logo-light.png" width="12%" class="flip-hover nav-item">
+           <span style="margin-left:-10px">
+                <h3 class="nav-link"><a href="#contact">Contact</a></h3>
+                <h3 class="nav-link"><a href="#my-workk">My Work</a></h3>
+                <h3 class="nav-link"> <a href="#about">About</a></h3>
+           </span>
+            <!-- <a href="http://instagram.com/brinascode"><img src="./images/instagram-icon.png" alt="instagram-icon" width="5%" style="position:relative;float:right;top:20%" class="social-media-icon nav-item"></a>
+            <a href="http://twitter.com/brinascode"><img src="./images/twitter-icon.png" alt="twitter-icon" width=6%" style="position:relative;float:right;top:20%" class="social-media-icon nav-item" ></a> -->
+        </nav>
+        <section id="phone-nav">
+            <strong style="float:left;padding:1vw;">Brinascode</strong>
+             <span style="float:right;padding:1vw;">
+                <a href="#about" style="font-size:4vw;">about</a>
+                <a href="#my-workk" style="font-size:4vw;">portfolio</a>
+                <a href="#contact" style="font-size:4vw;">contact </a>
+              </span>
+        </section>
+                                     <!-------------------Header--------------------->
        
-        <a href="https://www.linkedin.com/notifications/"> 
-            <img id="linkedin" style="position:relative;bottom:17vw;right:17vw;float:left" src="images/icons/linkedin-white.png" width="5%" alt="icon">
-        </a>
+        <header id="header" class="sticky light" style="overflow-x:hidden;overflow-y:hidden;">           <!-- The 'Editor' menu-->
+            <div id="header-left" class="light-editor">
+                <!-- The JS console:-->
+                <!-- <h2><div id="console"></div></h2>   -->
+                <div id="sim-editor" >
+                    <img src="./images/profile-pic-light.png" alt="my-pic" id="center-pic" width="80%"/>
+                         <span class="det">var <span class="var"> greeting </span> </span> =  <span class="str">"Hi there, welcome !"</span> </br></br>
+                                                             <span class="det">const </span> <span class="var"> aboutMe </span> = { </br>
+                                                            <span class="prop" style="text-indent:10px">name: </span> <span class="str">"Sabrina Koumoin"</span>,</br>
+                                                            <span class="prop">passions: </span>  <span class="str">["Web development","Web Design","Machine Learning"]</span>,</br>
+                                                            <span class="prop">programmingLanguages: </span>  <span class="str">["Javascript","Python","Java"]</span>,</br>
+                                                            </br>
+                                                           
+                                                            <span class="obj">console</span>.<span class="met">log</span><span class="str">("More projects coming soon")</span></br>
+                                                            </br>
+                                                            <span class="var">//Enjoy your visit</span>
+                </div>    
+            </div>
+            <!-- The colorful art / Right Brain---->
+            <div id="header-right" > 
+                <img  id="right-pic" src="./images/pinkblob.png"  width="190%" />
+            </div>
+        </header>
 
-        <a id="portfoliolink" href="http://brinascode.github.io" style="color:white;position:relative;bottom:17vw;left:52vw;float:left;font-size:2vw" > 
-                Portfolio
-         </a>
-       
-         <a id="bloglink" href="http://brinascode.github.io/blog.html" style="color:white;position:relative;bottom:17vw;left:53vw;float:left;font-size:2vw" > 
-                  Blog
-         </a>
-       
-        <span id="site-title"> Brina's Code </span>
-        <span id="site-subheading">Welcome to my portfolio!
-        </span>
+                                                <!-------------------About me--------------------->
+        <section id="about-me" class="niceText sticky light">
+                <div id="about-me-left-top">
+                    <div class="outer-circle" style="float:left;">
+                        <div class="inner-circle">
+                            <section class="circle-content"> 
+                                <h1> <a name="about"></a>About me  </h1> 
+                            </section> 
+                        </div>
+                    </div>
+                    <div >
+                        My name is Sabrina Koumoin and I am a fullstack web developer. I'm a full stack Javascript developer (React fangirl) but I also enjoy working with Python and Java. I work as a TA for a coding bootcamp and I'm also a computer science student in college.
 
-       <center> <img id="scroll-arrow" src="images/icons/white-2.gif" alt="arrow" style="position:absolute;top:39vw;margin-left:-4vw;width:9vw" onclick="arrowScroll()"></center>
+                     I am 100% right brain (creative and design-oriented) and I'm also 100% left brain (technical, science-focused) 🧬 and I'm thankful that I get to work in a field that allows me to explore the full breadth of my interests and personality.
+                    </div>
+                </div>
 
-      
-        
-    </header>
+                <div id="about-me-right" class="light niceText"=> 
+                    <div id="about-me-right-top">
+                        <div class="outer-circle" style="float:right;">
+                            <div class="inner-circle">
+                                <section class="circle-content"> 
+                                    <h1> Right brain </h1> 
+                                </section> 
+                            </div>
+                        </div>
+                        <div>
+                       I am skilled in CSS3 (I designed this portfolio without any CSS framework), web layouts, GIMP, color theory and UI/UX.
+                       A bunch of text here"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                       
 
-  
+                        </div>
+                    </div>
+                </div>
+
+                <div id="about-me-left-bottom" >
+                    <div class="outer-circle" id="left-brain-circle">
+                        <div class="inner-circle">
+                            <section class="circle-content"> 
+                                <h1> Left Brain  </h1> 
+                            </section> 
+                        </div>
+                    </div>
+                    A bunch of text here"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                    facilis est et expedita distinctio.  facilis est et expedita distinctio.  
+                 
+                </div>
+          <a name="my-workk"></a>
+     </section>
     
 
-    <div id="content">
-        
-            <div id="portfolio">
+                                            <!-------------------Exploreifconfig |egrep -o  '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+'  | head -1--------------------->
+                           <!-------------------My Work verticl;--------------------->
+     <section id="my-work" class="niceText sticky">
+       <div id="apps-image-container">
+      
+                <img src="images/withring.png" width="30%" style="left:38%;position:relative;top:0px;left:38%;" id="appsPic" /> 
+                    <br></br>
+                    <h2 class="title" > Check out my work</h2>
+        </div> 
+           
+        <div id="work-section">
+            <div id="work-flex-container">
+                       
+            </div>
+        </div>
+     </section>
 
-                <h1 style="font-size:10vh" id="hello-title">Hello !</h1>
+        <footer class="niceText">
+            <div style="text-align:center">
+                <br></br>
+                <a name="contact"> <h2 style="font-family:Nickainley;font-size:8.5vw;" > Stay in touch</h2></a>
+                <a href="github.com/brinascode">  <img style="padding:10px;" src="images/icons/github.png" width="8%" alt="github icon" style="margin-right:3vw;"/></a>
+                <a href="instagram.com/brinascode"><img style="padding:10px;" src="images/icons/instagram-icon.png" width="8%" alt="instagram icon"/></a>
+            </div>   
             
-                    <div class="row" style="margin-bottom:4vw">
-                               <div class="col-md-3" style="background-image:('images/portfolio/purpleme.png')"> 
-                                   
-                                       
-                                </div>
-                                <div class="col-md-9">
-                                       
-                                            <p>Welcome to my portfolio!
-                                            
-                                            </br>My name is Sabrina Koumoin,</br>I am a web developer,
-                                                tech aficionada and </br>Computer Science student.</br></p> 
-                                    </div>
-                            </div>
-                    </div>
-
-                    <h1 style="font-size:10vh" id="skills-title">Skills</h1>
-                    <div class="row">
-                            <div style="float:right" class="col-md-4">
-                                    <h2 >Web development</h2>
-                                    <p> I program in Javascript and have used the following:<ul>
-                                            <li>The good o&#x27;le Vanilla JS</li>
-                                            <li>The MEAN stack (Mongo, Express, Angular, Node)</li>
-                                            <li>The MERN stack (Mongo, Express, React, Node)</li>
-                                            <li>Gatsby JS (ReactJS)</li>
-                                            <li>JQuery</li>
-                                            <li>Heroku to deploy my apps</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                    
-                        
-                        
-                        <div style="float:left" class="col-md-4">
-                                <h2 >Web design</h2>
-                                <p> I also use the following to create aesthetically pleasing webapps and websites:
-                                    <ul>
-                                        <li>The good o&#x27;le CSS (Responsive media queries, flexbox...)</li>
-                                        <li>Bootstrap</li>
-                                        <li>React Foundation</li>
-                                        <li>Gimp Shop</li>
-                                        <li>Color theory</li>
-                                        <li>Digital art: I created the drawing </br>used in this theme and the dolls and
-                                            clothes in the dressup game. </li>
-                                    </ul>
-                                </p>
-                        </div>
-                        
-                        
-                        <div style="float:right" class="col-md-4">
-                                <h2  ><i> Real World </i> Languages</h2>
-                                <p>I speak:<ul>
-                                        <li>English (native proficiency)</li>
-                                        <li> French (native proficiency)</li>
-                                        <li>Spanish (native proficiency) </li>
-                                        <li>Portuguese (working knowledge) </li>
-                                    </ul>
-                                </p>
-                        
-                        </div>
-                    </div>
-            
-                        <h1 style="clear:both;font-size:10vh">My Work</h1>
-
-            
-                    <div  class="row">
-
-                            <div class="col-md-6" class="portfolio-left-box">
-                                
-                                    <a href="https://afribelle-promo.herokuapp.com/" >
-                                    <img src="images/portfolio/afribellelanding.png" alt="pic"  class="portfolio-image" style="border-radius:10px"/>
-                                
-                                    </a>
-                            
-                        </div>
-
-                        <div class="col-md-6" >
-                                    <div class="card">
-                                     <h3 class="card-header">Afribelle's landing page</h3>
-                                     <div class="card-body">
-                                         <p> The landing page for my first online business AfriBelle. Uses Bootstrap and CSS, hosted on Heroku.</p>
-                                     </div>
-                                    </div>
-                        </div>
-                        
-                                    <div class="col-md-6" class="portfolio-left-box">
-                                            <a href="https://afribelle.herokuapp.com/" >
-                                            <img src="images/portfolio/afribelle.png" alt="pic"  class="portfolio-image" style="border-radius:10px"/>
-                                            </a>
-                                    </div>
-        
-                                    <div class="col-md-6" >
-                                        <div class="card">
-                                                <h3 class="card-header">Afribelle</h3> 
-                                                <div class="card-body">
-                                                    <p> An online marketplace to buy and sell cosmetics. Was released in Ivory Coast for about 4 months. Uses the MEAN stack.</p>
-                                                </div>
-                                        </div>
-                                            
-                                    </div>
-                           
-                            <div class="col-md-6" class="portfolio-left-box">
-                            
-                                <img src="images/portfolio/muneeds.png" alt="pic"  class="portfolio-image" />
-                            
-                            </div>
-
-                            <div class="col-md-6">
-                            
-                                   
-                                    <div class="card">
-                                            <h3 class="card-header">UniNeeds</h3>
-                                            <div class="card-body">  
-                                                <p> 
-                                                A web app I am actively developing now to empower student businesses. Developped in React JS and the MERN stack.
-                                            </p></div>
-                                           </div>
-                                </div>
-
-                        
-
-                            <div class="col-md-6" class="portfolio-left-box">
-                                <a href="https://brinascode.github.io/hangman">
-                                    <img src="images/portfolio/hangman.jpg" alt="pic"  class="portfolio-image" />
-                                  
-                                </a>
-                            </div>
-
-                            <div class="col-md-6">
-                                    
-                                    <div class="card">
-                                            <h3 class="card-header">Hangman</h3>
-                                            <div class="card-body">
-                                                    <p> A simple hangman game written in Vanilla JavaScript. The graphics were made by me.</p>
-                                            </div>
-                                           </div>
-                                    
-                            </div>
-
-
-
-                            <div class="col-md-6" class="portfolio-left-box">
-                                    <a href="https://brinascode.github.io/dressupGame">
-                                        <img src="images/portfolio/dressup.jpg" alt="pic"  class="portfolio-image" />
-                                       
-                                    </a>
-                                </div>
-
-                            <div class="col-md-6">
-                                    
-                                    <div class="card">
-                                            <h3 class="card-header">Dressup</h3>
-                                            <div class="card-body">
-                                                    <p> A simple dressup game written in JavaScript. THe graphics (dolls, clothing etc) were designed by me.</p>
-                                            </div>
-                                           </div>
-                                
-                            </div>
-
-                            <div class="col-md-6" class="portfolio-left-box">
-                                    <a href="https://brinascode.github.io/myjournal">
-                                    <img src="images/portfolio/myjournal.jpg" alt="pic"  class="portfolio-image"/>
-                              
-                                    </a>
-                            </div>
-
-                                <div class="col-md-6">
-                                      
-                                        <div class="card">
-                                                <h3 class="card-header">My Journal</h3>
-                                                <div class="card-body">  <p> A journaling app for your browser written in vanilla JS and jQuery. Saves the data to your browser's local storage.</p></div>
-                                               </div>
-                                        
-                                </div>
-
-                                <div class="col-md-6" class="portfolio-left-box">
-                                        <a href="http://brinascode.github.io">
-                                            <img src="images/portfolio/hybrid.png" alt="pic"  class="portfolio-image"/>
-                                            
-                                        </a>
-                                </div>
-
-                                    <div class="col-md-6">
-                                           
-                                            <div class="card">
-                                                    <h3 class="card-header">This Portfolio/Blog Hybrid</h3>
-                                                    <div class="card-body">  <p> The site you are currently on</p></div>
-                                                   </div>
-                                            
-                                    </div>
-
-                                    <div class="col-md-6" class="portfolio-left-box">
-                                        <a href="https://brinascode.github.io/adopt-me-spa">
-                                            <img src="https://camo.githubusercontent.com/e0522442f5c4569b455bd8164afdaeb8ef96908e/68747470733a2f2f61646f70742d6d652d7370612e73332e616d617a6f6e6177732e636f6d2f73637265656e73686f742e706e67" alt="pic"  class="portfolio-image"/>
-                                            
-                                        </a>
-                                </div>
-
-                                    <div class="col-md-6">
-                                           
-                                            <div class="card">
-                                                    <h3 class="card-header">Adopt me app</h3>
-                                                    <div class="card-body">  <p> React application to adopt pets - data is fake :) </p></div>
-                                                   </div>
-                                            
-                                    </div>
-
-                                    <div class="col-md-6" class="portfolio-left-box">
-                                            <a href="https://brinascode.github.io/">
-                                            <img src="images/portfolio/braintheme.png" alt="pic"  class="portfolio-image"/>
-                                            
-                                            </a>
-                                        </div>
-            
-                                        <div class="col-md-6">
-                                               
-                                                <div class="card">
-                                                        <h3 class="card-header">Portfolio Left Brain/ Right Brain Theme</h3>
-                                                        <div class="card-body">  <p> An alternative design for this portfolio</p></div>
-                                                       </div>
-                                                
-                                            </div>
-                
-                        </div>
-                    
+            <div class="outer-square" style="margin-top:-20.5vw;">
+                    <div  style="position:relative;bottom:10vh;left:90%;color:black;font-family:Nickainley;font-size:4vw"><!--My Work--></div>
+                    <div class="border-triangle">
+                    </div>  
             </div>
 
-           
-                
-    </div>
-
-    <footer>
-                <p> © 2019 Sabrina Koumoin.  </p>
-            Blog Header Background <a href="http://www.freepik.com" style="color:white">Designed by pikisuperstar / Freepik</a> </br>
-            Portfolio Header Background <a href="http://www.freepik.com" style="color:white">Designed by Freepik</a>
-    </footer>
-
-
-
-</body>
-
-<script>
-
-    $(document).ready(
-
-
-
-
-    )
-    
-</script>
-
-
+            <div class="outer-square2" style="margin-top:-20.5vw;">
+                    <div  style="position:relative;bottom:10vh;left:90%;color:black;font-family:Nickainley;font-size:4vw"><!--My Work--></div>
+                    <div class="border-triangle2">
+                    </div> 
+             </div>
+        </footer>
+  
+        <script src="js/portfolioData.js"></script>
+        <script src="js/getPortfolioContent.js"></script>
+    </body>
 </html>
+
+
+
+

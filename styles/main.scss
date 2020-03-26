@@ -1,0 +1,51 @@
+@import "./scss/header.scss";
+@import "./scss/footer.scss";
+@import "./scss/header-console-colors.scss";
+@import "./scss/theme.scss";
+@import "./scss/about-me";
+@import "./scss/my-work";
+
+$images_dir:"./images/"; //how to share variables across files?
+
+@font-face {
+  font-family: Nickainley;
+  src: url("../fonts/NickainleyFF/TTF/Nickainley.ttf");
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+.title{
+  font-family: "Nickainley";
+  font-size:5vw;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+body{
+    overflow-x:hidden;
+    margin:auto;
+    padding:auto;
+    display:flex;
+        flex-flow:row wrap;
+        align-items: center;
+        justify-content: center;
+}
+
+@media only screen and (max-width:500px){
+    body{
+        padding:3vw;
+        
+
+    }
+}

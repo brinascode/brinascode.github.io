@@ -1,0 +1,23 @@
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light-editor {
+  background-color: #f9fbfb;
+}
+
+.dark-editor {
+  background-color: #0c1418;
+}
+
+.niceText {
+  font-size: 1.5vw;
+  font-family: Dosis;
+}
+/*# sourceMappingURL=theme.css.map */

@@ -1,0 +1,143 @@
+header {
+
+    height:30vw;
+    width:100vw;
+    padding-top:5vw;
+    // margin-top:-1vw;
+}
+
+nav{
+    overflow: hidden;
+    box-shadow:aliceblue;
+    width:98vw;
+    height:10.5vw;
+    // padding:5px;
+    padding:auto;
+}
+
+#phone-nav{
+    display:none;
+}
+
+.nav-link{
+    position:relative;
+    float:right;
+    top:20%;
+    font-family:Dosis;
+    margin-left:2vw;
+    font-size:2.3vw;
+}
+
+.social-media-icon {
+    &:hover{
+      width:5%;
+    }
+  }
+  
+
+//Animation
+@keyframes flipY{
+    from{}
+    to{
+      -webkit-tansform:rotateY(180deg);
+      transform:rotateY(180deg);
+      background-color:2s;
+    }
+  }
+
+.flip-hover{
+    &:hover{
+        animation:flipY;
+        animation-duration: 2s;
+    }
+}
+
+
+#sim-editor{
+    font-family:Monaco;
+    font-size:1.5vw;
+    margin-right:-34vw;
+    margin-bottom:10vw;
+    padding:1vw;   
+}
+
+#header-left{
+    display:inline-block;
+    width:50%;
+    height:30vw;
+    position: absolute;
+    z-index:1;
+    padding:1vw;
+    margin-top:-3vw;
+    // background-image: url("../images/editor.png");
+}
+
+#center-pic{
+    //position:relative;
+    // left:35vw;
+    // //bottom:35vw; //+3
+    // top:20vw;
+
+    // position:relative;
+    // right:0vw;
+    float:right;
+    clip-path:circle();    
+    shape-outside: circle();        
+    //From my experience clip-path and shape-outside only work with floated stuff, if you want the text to wrap around the image. If the position is relative then it wont work.
+}
+
+
+#header-right{
+    display:inline-block;
+    background-color:rgba(0,0,0,0);
+    width:49%;
+    height:30vw;
+    position: absolute;
+    left:50.5vw;
+    z-index:0;
+    //Console stuff now
+    padding:3%;
+}
+
+
+#right-pic{
+    position:relative;
+    bottom:10.5vw;
+    right:25vw;
+    background-color:transparent;
+}
+
+
+@media only screen and (max-width:500px){
+    #sim-editor{
+        font-size:5vw;
+    }
+
+    nav{
+        display:none;
+        
+    }
+
+    #phone-nav{
+        display:block;
+        font-family:Dosis;
+        font-size:6vw;
+        color:black;
+        width:100%;
+        font-weight:50px;
+        box-shadow:5px 2px 30px #ffbd59;
+        // border-bottom:solid black 8px;
+        position:fixed;
+        top:0px;
+        z-index:2;
+        background-color:white;
+        padding:1vw;
+         
+    }
+
+    #header{
+        margin-top:12vw;
+    }
+
+    
+}
