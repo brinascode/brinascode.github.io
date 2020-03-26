@@ -4,4 +4,4 @@ The portfolio can be accessed at http://brinascode.github.io
 and the blog at http://brinascode.github.io/blog
 
 
-![Site](/images/portfolio/items/newtheme.png)
+![Site](/images/items/newtheme.png)
